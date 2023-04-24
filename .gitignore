@@ -1,0 +1,11 @@
+log.txt
+dataset/**
+dataset_former/**
+kernel.py
+results_kernel/**
+results/**
+results_former/**
+results_GraSH/**
+pic/**
+**/__pycache__/
+results_1/**
