@@ -43,11 +43,26 @@ RotatE_cfg.eval_params['ogbl-wikikg2'] = {'n_neg': 32, 'regularizer': 'DURA', 'l
 '''
 ComplEx_cfg = argparse.Namespace()
 ComplEx_cfg.eval_params  = {}
+TComplEx_cfg = argparse.Namespace()
+TComplEx_cfg.eval_params  = {}
+TNTComplEx_cfg = argparse.Namespace()
+TNTComplEx_cfg.eval_params  = {}
+TATransEComplEx_cfg = argparse.Namespace()
+TATransEComplEx_cfg.eval_params  = {}
+TADistMultComplEx_cfg = argparse.Namespace()
+TADistMultComplEx_cfg.eval_params  = {}
+# TComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.00, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+# regu: 0.00 / 0.01 /dropout 0.01
+TNTComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.00034555907276779337, 'regu_weight': 6.082324687567316e-06, 'advs': 0, 'dropoutRate': 0.2610073515640779, 'gamma': 2.528275760407377, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}
+TATransEComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 1000, 'n_neg': 512, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.01348020199614398, 'regu_weight': 0.008398083724263681, 'advs': 0, 'dropoutRate': 0.035807273497018996, 'gamma': 16.704929917670853, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+TADistMultComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 500, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0034108537641166182, 'regu_weight': 3.4659492556839003e-07, 'advs': 0, 'dropoutRate': 0.013464570887255278, 'gamma': 8.188166992752894, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+global_cfg.TComplEx_cfg  = TNTComplEx_cfg
+global_cfg.TNTComplEx_cfg  = TNTComplEx_cfg
 # 0.484 / 0.440 / 0.506 / 0.562
 ComplEx_cfg.eval_params['wn18rr']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+ComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
 # 0.352 / 0.263 / 0.387 / 0.530
-# ComplEx_cfg.eval_params['FB15k_237']    = {'n_neg': 512, 'regularizer': 'DURA', 'loss_function': 'BCE_adv', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0009706433869179586, 'regu_weight': 0.009753922487127387, 'advs': 1.9300950027456198, 'dropoutRate': 0.22146007031450685, 'gamma': 13.057616683834388, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
-ComplEx_cfg.eval_params['FB15k_237']    = {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'uniform', 'lr': 0.00036371892598362513, 'regu_weight': 0.0018574969101208556, 'advs': 0, 'dropoutRate': 0.2691085284581277, 'gamma': 19.556415241264222, 'optimizer': 'adam', 'shareInverseRelation': True, 'batch_size': 512, 'dim': 2000, 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01, 'training_mode': 'kVsAll'} 
+ComplEx_cfg.eval_params['FB15k_237']    = {'n_neg': 512, 'regularizer': 'DURA', 'loss_function': 'BCE_adv', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0009706433869179586, 'regu_weight': 0.009753922487127387, 'advs': 1.9300950027456198, 'dropoutRate': 0.22146007031450685, 'gamma': 13.057616683834388, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
 # Val MRR: 0.8394 Test MRR: 0.8385
 ComplEx_cfg.eval_params['ogbl-biokg']   = {'n_neg': 512, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0018915542437953079, 'regu_weight': 0.0013824721781032021, 'advs': 0, 'dropoutRate': 0.016532927574070145, 'gamma': 12.902627789934513, 'filter_falseNegative': True, 'label_smooth': 0.0, 'embedding_range': 0.01, 'training_mode': 'negativeSampling'}
 # Val MRR: 0.5099, Test MRR: 0.4942
@@ -187,7 +202,7 @@ training_strategy.label_smooth = 0.0
 # 0.0 - 1.0
 training_strategy.embedding_range = 1e-2
 # True or False: if False, subsampling_weight will be taken into loss calculation
-training_strategy.uni_weight = False
+training_strategy.uni_weight = True
 # True or False
 training_strategy.require_subsampling_weight    = True
 # True or False

@@ -20,6 +20,7 @@ from pykeen.trackers import ConsoleResultTracker, FileResultTracker, PythonResul
 from pykeen.evaluation import RankBasedEvaluator
 from pykeen.regularizers import LpRegularizer
 from pykeen.nn import DistMultInteraction, TransEInteraction, ConvEInteraction
+import traceback
 
 def base_run_model(args, params_dict, process_no=0):
     # --------- checking and revising configure -------------------------------------------------
@@ -47,7 +48,7 @@ def base_run_model(args, params_dict, process_no=0):
     
     if args.model in ['RGCN', 'CompGCN']:
         return GNN_methods(args, params_dict, process_no)
-    elif args.model in ['TransE', 'DistMult', 'ComplEx', 'RotatE', 'ConvE', 'TuckER']:
+    elif args.model in ['TransE', 'DistMult', 'ComplEx', 'RotatE', 'ConvE', 'TuckER', 'TTransE' 'TComplEx', 'TNTComplEx', 'TATransE', 'TADistMult']:
         return embedding_methods(args, params_dict, process_no)
     raise ValueError('==> [Error] unknown model: {}'.format(args.model))
 
@@ -197,10 +198,11 @@ def embedding_methods(args, params_dict, process_no=0):
         dataset_name=args.dataset,
         nentity=args.datasetInfo['nentity'],
         nrelation=args.datasetInfo['nrelation'],
+        ntime=args.datasetInfo['ntime'],
+        id2timestr=args.datasetInfo['id2timestr'],
         params_dict=params_dict,
         config=global_cfg,
         evaluator=evaluator,
-        args=args
         )
 
     if args.loadPretrain:
@@ -220,12 +222,13 @@ def embedding_methods(args, params_dict, process_no=0):
             res = searched_configs[onehotKey][0]
             mrr = float(res['evaluation']['mrr'])
 
-            if mrr > 0.0:
+            if mrr >= 0.0:
                 mrr_index = list(res['evaluation']['val_history'].values()).index(mrr)
                 mrr_iter  = list(res['evaluation']['val_history'].keys())[mrr_index]
                 test_mrr  = res['evaluation']['test_history'][mrr_iter]
                 return {'loss': (1 - mrr), 'status': 'OK', 'val_mrr':mrr, 'test_mrr':test_mrr}
             else:
+                logging.critical('mrr < 0 error')
                 return {'loss': (1 - mrr), 'status': 'FAIL', 'val_mrr':-1, 'test_mrr':-1}
     
     # move to device
@@ -276,6 +279,8 @@ def embedding_methods(args, params_dict, process_no=0):
 
             if 'NAN loss' in onestep_summary.keys():
                 best_metrics = {'NAN loss':True, 'mrr':0.0}
+                logging.critical("NAN loss in training step")
+                traceback.print_exc()
                 FAIL_flag     = True
                 break
 
@@ -287,6 +292,8 @@ def embedding_methods(args, params_dict, process_no=0):
                     torch.cuda.empty_cache()
                 best_metrics = {'OOM':True, 'mrr':0.0}
                 
+            traceback.print_exc()
+            print(str(exception))
             FAIL_flag = True
             break
            
@@ -301,6 +308,8 @@ def embedding_methods(args, params_dict, process_no=0):
                     if hasattr(torch.cuda, 'empty_cache'):
                         torch.cuda.empty_cache()
                     best_metrics = {'OOM':True, 'mrr':0.0}
+                traceback.print_exc()
+                print(str(exception))
                 FAIL_flag = True
                 break
 
@@ -331,8 +340,11 @@ def embedding_methods(args, params_dict, process_no=0):
                             if hasattr(torch.cuda, 'empty_cache'):
                                 torch.cuda.empty_cache()
                             best_metrics = {'OOM':True, 'mrr':0.0}
-                            FAIL_flag = True
-                            break
+                        
+                        traceback.print_exc()
+                        print(str(exception))
+                        FAIL_flag = True
+                        break
 
                     best_metrics['test_metrics'] = tst_metrics
                     test_mrr                     = tst_metrics['mrr']
@@ -368,6 +380,7 @@ def embedding_methods(args, params_dict, process_no=0):
         saveToPklFile(onehotKey, params_dict, best_metrics, args.perf_dict)
 
     if FAIL_flag:
+        print('fail flag')
         return {'loss': (1-best_mrr), 'status': 'FAIL', 'val_mrr': -1, 'test_mrr': -1}
     else:
         return {'loss': (1-best_mrr), 'status': 'OK', 'val_mrr': best_mrr, 'test_mrr': test_mrr}

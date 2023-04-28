@@ -32,108 +32,33 @@ class TrainDataset(Dataset):
     
     def __getitem__(self, idx):
         
-        if self.datasetName == 'ogbl-wikikg2':
-            ####### wikikg2 ########
-            head, relation, tail = self.triples['head'][idx], self.triples['relation'][idx], self.triples['tail'][idx]
-            positive_sample      = [head, relation, tail]
-            positive_sample      = torch.LongTensor(positive_sample)
-            filter_mask          = torch.Tensor([-1]) 
-            subsampling_weight   = self.count[(head, relation)] + self.count[(tail, (relation+self.nrelation)%(2*self.nrelation))]
-            subsampling_weight   = torch.sqrt(1 / torch.Tensor([subsampling_weight]))
+        head, relation, tail, time  = self.triples[idx]
+        subsampling_weight   = self.count[idx]    
+        positive_sample      = torch.LongTensor((head, relation, tail, time))
+        filter_mask          = torch.Tensor([-1])        
 
-            # generate negative samples
-            negative_sample = torch.randint(0, self.nentity, (self.negative_sample_size,))
-                
-            # TODO: remove
-            # generate labels (0/1) for 1(k) Vs All training mode
-            if self.trainMode == 'kVsAll':
-                tail_peers         = self.indexing_tail[idx]
-                labels             = torch.zeros(self.nentity)
-                labels[tail_peers] = 1
-            else:
-                labels = torch.Tensor([-1])
+        # generate negative samples
+        if self.trainMode == 'negativeSampling':
+            # non-redundant sampling
+            negative_sample = torch.randperm(self.nentity)[:self.negative_sample_size]
 
-        elif self.datasetName == 'ogbl-biokg':
-            ####### biokg #######
-            head, relation, tail = self.triples['head'][idx], self.triples['relation'][idx], self.triples['tail'][idx]
-            head_type, tail_type = self.triples['head_type'][idx], self.triples['tail_type'][idx]
-            positive_sample      = [head + self.entity_dict[head_type][0], relation, tail + self.entity_dict[tail_type][0]]
-            positive_sample      = torch.LongTensor(positive_sample)
-            filter_mask          = torch.Tensor([-1])   
-            subsampling_weight   = self.count[(head, relation)] + self.count[(tail, (relation+self.nrelation)%(2*self.nrelation))]
-            subsampling_weight   = torch.sqrt(1 / torch.Tensor([subsampling_weight]))
-            # subsampling_weight   = self.count[idx] 
-            
-            # generate negative samples
-            if self.trainMode == 'negativeSampling':
-                negative_sample = torch.randint(self.entity_dict[tail_type][0], self.entity_dict[tail_type][1], (self.negative_sample_size,))
+            if self.filter_falseNegative:
+                filter_mask = torch.from_numpy(
+                    np.in1d(negative_sample, self.indexing_tail[idx], invert=True)
+                    ).int()
 
-                if self.filter_falseNegative:
-                    # tails = self.indexing_tail[idx] 
-                    tails = self.indexing_tail[(head, relation)]
-                    filter_mask = torch.from_numpy(np.in1d(negative_sample, tails, invert=True)).int()
+        else: 
+            # 1VsAll or kVsAll, no needs for generating indexes
+            negative_sample = torch.Tensor([-1])
 
-            else: 
-                # 1VsAll or kVsAll, no needs for generating indexes
-                negative_sample = torch.Tensor([-1])
-        
-            # TODO: remove
-            # generate labels (0/1) for 1(k) Vs All training mode
-            if self.trainMode == 'kVsAll':
-                tail_peers         = self.indexing_tail[idx]
-                labels             = torch.zeros(self.nentity)
-                labels[tail_peers] = 1
+        # generate labels (0/1) for 1(k) Vs All training mode
+        if self.trainMode == 'kVsAll':
+            tail_peers         = self.indexing_tail[idx]
+            labels             = torch.zeros(self.nentity)
+            labels[tail_peers] = 1
 
-            else:
-                labels = torch.Tensor([-1])
-
-        elif 'biokg' in self.datasetName and 'sampled' in self.datasetName:
-            head, relation, tail, head_type, tail_type = self.triples[idx]
-            subsampling_weight   = self.count[idx]    
-            positive_sample      = torch.LongTensor((head, relation, tail))
-            filter_mask          = torch.Tensor([-1])   
-            labels               = torch.Tensor([-1])
-            # generate negative samples
-            if self.trainMode == 'negativeSampling':
-                # non-redundant sampling
-                negative_sample = torch.randint(self.entity_dict[tail_type][0], self.entity_dict[tail_type][1], (self.negative_sample_size,))
-                if self.filter_falseNegative:
-                    filter_mask = torch.from_numpy(
-                        np.in1d(negative_sample, self.indexing_tail[idx], invert=True)
-                        ).int()
-            else: 
-                # 1VsAll or kVsAll: not supported (OOM)
-                exit()
-            
         else:
-            ###### datasets: wn18(rr) fb15k(237)  ######
-            head, relation, tail = self.triples[idx]
-            subsampling_weight   = self.count[idx]    
-            positive_sample      = torch.LongTensor((head, relation, tail))
-            filter_mask          = torch.Tensor([-1])        
-
-            # generate negative samples
-            if self.trainMode == 'negativeSampling':
-                # non-redundant sampling
-                negative_sample = torch.randperm(self.nentity)[:self.negative_sample_size]
-
-                if self.filter_falseNegative:
-                    filter_mask = torch.from_numpy(
-                        np.in1d(negative_sample, self.indexing_tail[idx], invert=True)
-                        ).int()
-
-            else: 
-                # 1VsAll or kVsAll, no needs for generating indexes
-                negative_sample = torch.Tensor([-1])
-
-            # generate labels (0/1) for 1(k) Vs All training mode
-            if self.trainMode == 'kVsAll':
-                tail_peers         = self.indexing_tail[idx]
-                labels             = torch.zeros(self.nentity)
-                labels[tail_peers] = 1
-
-            else:
-                labels = torch.Tensor([-1])
+            labels = torch.Tensor([-1])
 
         return positive_sample, negative_sample, labels, filter_mask, subsampling_weight
 
@@ -186,54 +111,12 @@ class TestDataset(Dataset):
         return self.len
     
     def __getitem__(self, idx):
-        if self.datasetName == 'ogbl-wikikg2':
-            head, relation, tail = self.triples['head'][idx], self.triples['relation'][idx], self.triples['tail'][idx]
-            positive_sample = torch.LongTensor((head, relation, tail))
-            negative_sample = torch.cat([torch.LongTensor([tail]), torch.from_numpy(self.triples['tail_neg'][idx])])
-
-        elif self.datasetName == 'ogbl-biokg':
-            head, relation, tail = self.triples['head'][idx], self.triples['relation'][idx], self.triples['tail'][idx]
-            head_type, tail_type = self.triples['head_type'][idx], self.triples['tail_type'][idx]
-            positive_sample = torch.LongTensor((head + self.entity_dict[head_type][0], relation, tail + self.entity_dict[tail_type][0]))
-
-            negative_sample = torch.cat([torch.LongTensor([tail + self.entity_dict[tail_type][0]]), 
-                            torch.from_numpy(self.triples['tail_neg'][idx] + self.entity_dict[tail_type][0])])
-
-        elif 'biokg' in self.datasetName and 'sampled' in self.datasetName:
-            head, relation, tail, head_type, tail_type = self.triples[idx]
-            positive_sample = torch.LongTensor((head, relation, tail))
-            negative_sample = torch.from_numpy(self.filteredSamples[idx])
-
-            return positive_sample, negative_sample
-
-        elif 'wikikg2' in self.datasetName and 'sampled' in self.datasetName:
-            head, relation, tail = self.triples[idx]
-            positive_sample = torch.LongTensor((head, relation, tail))
-            negative_sample = torch.from_numpy(self.filteredSamples[idx])
-            return positive_sample, negative_sample
-
-        else:
-            head, relation, tail = self.triples[idx]
-            filter_bias          = self.filteredSamples[idx]
-            positive_sample      = torch.LongTensor((head, relation, tail))     
-
-            return positive_sample, filter_bias
-
-        return positive_sample, negative_sample
-    
-    @staticmethod
-    def getFilteredSamples(head, relation, tail, all_true_tail, nentity):
-        '''
-        (1,  tail_index) if invalid (negative triple)
-        (-1, tail_index) if valid (exsiting triple)
-        '''
         
-        tails              = all_true_tail[(head, relation)]
-        filter_bias        = np.ones(nentity)
-        filter_bias[tails] *= (-1)
-        filter_bias[tail]  = 1
+        head, relation, tail, time = self.triples[idx]
+        filter_bias          = self.filteredSamples[idx]
+        positive_sample      = torch.LongTensor((head, relation, tail, time))     
 
-        return torch.Tensor(filter_bias)
+        return positive_sample, filter_bias
 
     @staticmethod
     def collate_fn(data):

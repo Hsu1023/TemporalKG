@@ -1,4 +1,7 @@
 log.txt
 kernel.py
+dataset/**
 results/**
 **/__pycache__/
+tkbc/**
+src_data/**
