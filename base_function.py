@@ -48,7 +48,7 @@ def base_run_model(args, params_dict, process_no=0):
     
     if args.model in ['RGCN', 'CompGCN']:
         return GNN_methods(args, params_dict, process_no)
-    elif args.model in ['TransE', 'DistMult', 'ComplEx', 'RotatE', 'ConvE', 'TuckER', 'TTransE' 'TComplEx', 'TNTComplEx', 'TATransE', 'TADistMult']:
+    elif args.model in ['TransE', 'DistMult', 'ComplEx', 'RotatE', 'ConvE', 'TuckER', 'TTransE', 'TComplEx', 'TNTComplEx', 'TATransE', 'TADistMult', 'DETransE', 'DEDistMult', 'DESimplE']:
         return embedding_methods(args, params_dict, process_no)
     raise ValueError('==> [Error] unknown model: {}'.format(args.model))
 

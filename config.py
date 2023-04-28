@@ -41,23 +41,39 @@ RotatE_cfg.eval_params['ogbl-wikikg2'] = {'n_neg': 32, 'regularizer': 'DURA', 'l
 '''
     ComplEx
 '''
-ComplEx_cfg = argparse.Namespace()
-ComplEx_cfg.eval_params  = {}
 TComplEx_cfg = argparse.Namespace()
 TComplEx_cfg.eval_params  = {}
-TNTComplEx_cfg = argparse.Namespace()
-TNTComplEx_cfg.eval_params  = {}
-TATransEComplEx_cfg = argparse.Namespace()
-TATransEComplEx_cfg.eval_params  = {}
-TADistMultComplEx_cfg = argparse.Namespace()
-TADistMultComplEx_cfg.eval_params  = {}
+
+
 # TComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.00, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
 # regu: 0.00 / 0.01 /dropout 0.01
+
+TNTComplEx_cfg = argparse.Namespace()
+TNTComplEx_cfg.eval_params  = {}
 TNTComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.00034555907276779337, 'regu_weight': 6.082324687567316e-06, 'advs': 0, 'dropoutRate': 0.2610073515640779, 'gamma': 2.528275760407377, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}
-TATransEComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 1000, 'n_neg': 512, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.01348020199614398, 'regu_weight': 0.008398083724263681, 'advs': 0, 'dropoutRate': 0.035807273497018996, 'gamma': 16.704929917670853, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
-TADistMultComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 500, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0034108537641166182, 'regu_weight': 3.4659492556839003e-07, 'advs': 0, 'dropoutRate': 0.013464570887255278, 'gamma': 8.188166992752894, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
-global_cfg.TComplEx_cfg  = TNTComplEx_cfg
-global_cfg.TNTComplEx_cfg  = TNTComplEx_cfg
+
+TATransE_cfg = argparse.Namespace()
+TATransE_cfg.eval_params  = {}
+TATransE_cfg.eval_params['ICEWS14']       = {'batch_size': 1024, 'dim': 1000, 'n_neg': 512, 'regularizer': 'None', 'loss_function': 'MR', 'initializer': 'xavier_normal', 'lr': 0.00034204504228734563, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.03463374768100025, 'gamma': 7.479135987183745, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+TADistMult_cfg = argparse.Namespace()
+TADistMult_cfg.eval_params  = {}
+TADistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+TTransE_cfg = argparse.Namespace()
+TTransE_cfg.eval_params  = {}
+TTransE_cfg.eval_params['ICEWS14']  =   {'batch_size': 1024, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.003930490039134467, 'regu_weight': 0.001677697278368161, 'advs': 0, 'dropoutRate': 0.04599246027135747, 'gamma': 23.24125309599283, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+DETransE_cfg = argparse.Namespace()
+DETransE_cfg.eval_params  = {}
+DEDistMult_cfg = argparse.Namespace()
+DEDistMult_cfg.eval_params  = {}
+DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 256, 'dim': 500, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+DESimplE_cfg = argparse.Namespace()
+DESimplE_cfg.eval_params  = {}
+
+ComplEx_cfg = argparse.Namespace()
+ComplEx_cfg.eval_params  = {}
 # 0.484 / 0.440 / 0.506 / 0.562
 ComplEx_cfg.eval_params['wn18rr']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
 ComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
@@ -133,6 +149,16 @@ global_cfg.RESCAL_cfg   = RESCAL_cfg
 global_cfg.ConvE_cfg    = ConvE_cfg
 global_cfg.TuckER_cfg   = TuckER_cfg
 global_cfg.AutoSF_cfg   = AutoSF_cfg
+global_cfg.TTransE_cfg  = TTransE_cfg
+global_cfg.TComplEx_cfg = TComplEx_cfg
+global_cfg.TNTComplEx_cfg = TNTComplEx_cfg
+global_cfg.TATransE_cfg = TATransE_cfg
+global_cfg.TADistMult_cfg = TADistMult_cfg
+global_cfg.DEDistMult_cfg = DEDistMult_cfg
+global_cfg.DESimplE_cfg = DESimplE_cfg
+global_cfg.DETransE_cfg = DETransE_cfg
+
+
 
 # full space
 global_cfg.full_space = {
