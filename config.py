@@ -68,9 +68,10 @@ DETransE_cfg = argparse.Namespace()
 DETransE_cfg.eval_params  = {}
 DEDistMult_cfg = argparse.Namespace()
 DEDistMult_cfg.eval_params  = {}
-DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 256, 'dim': 500, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+# DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 256, 'dim': 500, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 DESimplE_cfg = argparse.Namespace()
 DESimplE_cfg.eval_params  = {}
+DESimplE_cfg.eval_params['ICEWS14']       = {'batch_size': 128, 'dim': 300, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.01, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 ComplEx_cfg = argparse.Namespace()
 ComplEx_cfg.eval_params  = {}

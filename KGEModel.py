@@ -54,17 +54,31 @@ class KGEModel(nn.Module):
         if self.model_name in ['DESimplE', 'DETransE', 'DEDistMult']:
             self.t_dim = int(self.hidden_dim * 0.1) # dynamic dim
             self.s_dim = self.hidden_dim - self.t_dim # static dim
-            self.yy_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.yy_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.yy_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.mm_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.mm_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.mm_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.dd_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.dd_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
-            self.dd_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))            
-            self.entity_embedding     = nn.Parameter(torch.zeros(self.nentity, self.s_dim))
-            self.relation_embedding   = nn.Parameter(torch.zeros(self.nrelation, self.relation_dim))
+            
+            if self.model_name in ['DESimplE']:
+                self.yy_a = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.yy_w = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.yy_b = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.mm_a = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.mm_w = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.mm_b = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.dd_a = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.dd_w = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))
+                self.dd_b = nn.Parameter(torch.zeros(self.nentity * 2, self.t_dim))  
+                self.relation_embedding = nn.Parameter(torch.zeros(self.nrelation * 2, self.relation_dim))  
+                self.entity_embedding     = nn.Parameter(torch.zeros(self.nentity * 2, self.s_dim))
+            else:
+                self.yy_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.yy_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.yy_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.mm_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.mm_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.mm_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.dd_a = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.dd_w = nn.Parameter(torch.zeros(self.nentity, self.t_dim))
+                self.dd_b = nn.Parameter(torch.zeros(self.nentity, self.t_dim))  
+                self.relation_embedding = nn.Parameter(torch.zeros(self.nrelation, self.relation_dim))
+                self.entity_embedding     = nn.Parameter(torch.zeros(self.nentity, self.s_dim))
             self.time_act = torch.sin
         else:
             self.entity_embedding     = nn.Parameter(torch.zeros(self.nentity, self.hidden_dim))
@@ -116,7 +130,6 @@ class KGEModel(nn.Module):
             'DESimplE': self.DEModel,
             'DETransE': self.DEModel,
             'DEDistMult': self.DEModel,
-            'SimplE': self.SimplE,
         }
         
     def init_embedding(self, init_method):
@@ -159,37 +172,42 @@ class KGEModel(nn.Module):
                 - all        : for 1(k) vs All training 
         '''
         head_index, relation_index, tail_index, time_index = sample
-        inv_relation_mask = torch.where(relation_index >= self.nrelation) if self.shareInverseRelation else None
-        relation_index    = relation_index % self.nrelation if self.shareInverseRelation else relation_index
-        head              = self.dropout(self.entity_embedding[head_index])
-        relation          = self.dropout(self.relation_embedding[relation_index])
-        
-        tail              = self.dropout(self.entity_embedding if mode == 'all' else self.entity_embedding[tail_index])
+        inv_relation_mask = None
+        if self.model_name != 'DESimplE':
+            inv_relation_mask = torch.where(relation_index >= self.nrelation) if self.shareInverseRelation else None
+            relation_index    = relation_index % self.nrelation if self.shareInverseRelation else relation_index          
 
         if self.model_name in ['TADistMult', 'TATransE']: 
             head              = self.dropout(self.entity_embedding[head_index])
             relation          = self.dropout(self.relation_embedding[relation_index])
+            tail              = self.dropout(self.entity_embedding if mode == 'all' else self.entity_embedding[tail_index])
             time_tokens = self.TA_get_time_tokens(time_index) # (B, 4+2+2)
             time_input = self.dropout(self.tem_embedding[time_tokens]) # (B, 8, dim)
             score = self.TAModel(head, relation, tail, time_input, inv_relation_mask=inv_relation_mask, mode=mode)
 
         elif self.model_name in ['DETransE', 'DEDistMult', 'DESimplE']:
-            score = self.DEModel(head_index, relation_index, tail_index, time_index, inv_relation_mask, mode=mode)
+            if self.model_name == 'DESimplE':
+                score = self.DESimplE(head_index, relation_index, tail_index, time_index, inv_relation_mask, mode=mode)
+            else:
+                score = self.DEModel(head_index, relation_index, tail_index, time_index, inv_relation_mask, mode=mode)
         elif self.model_name in ['TTransE', 'TComplEx']:
             head              = self.dropout(self.entity_embedding[head_index])
             relation          = self.dropout(self.relation_embedding[relation_index])
+            tail              = self.dropout(self.entity_embedding if mode == 'all' else self.entity_embedding[tail_index])
             time = self.dropout(self.time_embedding[time_index])
             score = self.model_func[self.model_name](head, relation, tail, time,inv_relation_mask=inv_relation_mask, mode=mode)
 
         elif self.model_name in ['TNTComplEx']:
             head              = self.dropout(self.entity_embedding[head_index])
             relation          = self.dropout(self.relation_embedding[relation_index])
+            tail              = self.dropout(self.entity_embedding if mode == 'all' else self.entity_embedding[tail_index])
             time = self.dropout(self.time_embedding[time_index])
             aux  = self.dropout(self.aux_embedding[relation_index])
             score = self.model_func[self.model_name](head, relation, tail, time, aux, inv_relation_mask=inv_relation_mask, mode=mode)
         else:
             head              = self.dropout(self.entity_embedding[head_index])
             relation          = self.dropout(self.relation_embedding[relation_index])
+            tail              = self.dropout(self.entity_embedding if mode == 'all' else self.entity_embedding[tail_index])
             score = self.model_func[self.model_name](head, relation, tail, inv_relation_mask=inv_relation_mask, mode=mode)
         
         return score
@@ -205,53 +223,75 @@ class KGEModel(nn.Module):
             month[idx] = int(mm)
             day[idx] = int(dd)
         return year.reshape(-1).cuda(), month.reshape(-1).cuda(), day.reshape(-1).cuda()
-        
+    
+    def DE_get_time_embeddings(self, index, year, month, day):
+        y = self.dropout(self.yy_a[index]) * self.time_act(self.dropout(self.yy_w[index]) * year + self.dropout(self.yy_b[index]))
+        m = self.dropout(self.mm_a[index]) * self.time_act(self.dropout(self.mm_w[index]) * month + self.dropout(self.mm_b[index]))
+        d = self.dropout(self.dd_a[index]) * self.time_act(self.dropout(self.dd_w[index]) * day + self.dropout(self.dd_b[index]))
+        return y + m + d
+
     def DEModel(self, head_index, relation_index, tail_index, time_index, inv_relation_mask, mode='single'):
         year, month, day = self.DE_get_time(time_index)
         year, month, day = year.reshape(-1,1), month.reshape(-1,1), day.reshape(-1,1)
-        head_y = self.dropout(self.yy_a[head_index]) * self.time_act(self.dropout(self.yy_w[head_index]) * year + self.dropout(self.yy_b[head_index]))
-        head_m = self.dropout(self.mm_a[head_index]) * self.time_act(self.dropout(self.mm_w[head_index]) * month + self.dropout(self.mm_b[head_index]))
-        head_d = self.dropout(self.dd_a[head_index]) * self.time_act(self.dropout(self.dd_w[head_index]) * day + self.dropout(self.dd_b[head_index]))
-        head_t = head_y + head_m + head_d # [B, 0.1 dim]
+        head_t = self.DE_get_time_embeddings(head_index, year, month, day) # [B, 0.1 dim]
         head_s = self.dropout(self.entity_embedding[head_index]) # [B, 0.9 dim]
         head = torch.cat((head_t, head_s), dim=1) # [B, dim]
 
         year, month, day = year.reshape(-1, 1, 1), month.reshape(-1, 1, 1), day.reshape(-1, 1, 1)
         if mode == 'all':
             tail_index = torch.arange(self.nentity).cuda()
-        tail_y = self.dropout(self.yy_a[tail_index]) * self.time_act(self.dropout(self.yy_w[tail_index]) * year + self.dropout(self.yy_b[tail_index]))
-        tail_m = self.dropout(self.mm_a[tail_index]) * self.time_act(self.dropout(self.mm_w[tail_index]) * month + self.dropout(self.mm_b[tail_index]))
-        tail_d = self.dropout(self.dd_a[tail_index]) * self.time_act(self.dropout(self.dd_w[tail_index]) * day + self.dropout(self.dd_b[tail_index]))
-        tail_t = tail_y + tail_m + tail_d # [B, pos/neg, 0.1 dim]
+        tail_t = self.DE_get_time_embeddings(tail_index, year, month, day) # [B, pos/neg, 0.1 dim]
         tail_s = self.dropout(self.entity_embedding[tail_index])# [B, pos/neg, 0.9d]; all : [nentity, 0.9d]
         if mode == 'all':
-            # print(tail_t.shape, tail_s.shape)
             tail_s = tail_s.unsqueeze(0).repeat(tail_t.shape[0], 1, 1) # [B, nentity, 0.9 dim]
         tail = torch.cat((tail_t, tail_s), dim=2) # [B, pos/neg, dim]
 
         relation = self.dropout(self.relation_embedding[relation_index])
 
-        if self.model_name == 'DESimplE':
-            aux = self.dropout(self.aux_embedding[relation_index])
-            return self.SimplE(head, relation, tail, aux, inv_relation_mask, mode='negativeSampling' if mode!='single' else mode)
         # DE-XX -> XX
         return self.model_func[self.model_name[2:]](head, relation, tail, inv_relation_mask=inv_relation_mask, mode='negativeSampling' if mode!='single' else mode)
     
-    def SimplE(self, head, relation, tail, aux, inv_relation_mask, mode='single'):
+    def DESimplE(self, head_index, relation_index, tail_index, time_index, inv_relation_mask, mode='single'):
         assert self.shareInverseRelation
-        temp = relation[inv_relation_mask]
-        relation[inv_relation_mask] = aux[inv_relation_mask]
-        aux[inv_relation_mask] = temp
+        year, month, day = self.DE_get_time(time_index)
+        year, month, day = year.reshape(-1,1), month.reshape(-1,1), day.reshape(-1,1)
+        # head_index for head
+        head1_t = self.DE_get_time_embeddings(head_index, year, month, day) # [B, 0.1 dim]
+        head1_s = self.dropout(self.entity_embedding[head_index]) # [B, 0.9 dim]
+        head1 = torch.cat((head1_t, head1_s), dim=1) # [B, dim]
+        # head_index for tail
+        head2_t = self.DE_get_time_embeddings(head_index + self.nentity, year, month, day) # [B, 0.1 dim]
+        head2_s = self.dropout(self.entity_embedding[head_index + self.nentity]) # [B, 0.9 dim]
+        head2 = torch.cat((head2_t, head2_s), dim=1) # [B, dim]       
+
+        year, month, day = year.reshape(-1, 1, 1), month.reshape(-1, 1, 1), day.reshape(-1, 1, 1)
+        # tail_index for head
+        if mode == 'all':
+            tail_index = torch.arange(self.nentity).cuda()
+        tail1_t = self.DE_get_time_embeddings(tail_index, year, month, day) # [B, pos/neg, 0.1 dim]
+        tail1_s = self.dropout(self.entity_embedding[tail_index])# [B, pos/neg, 0.9d]; all : [nentity, 0.9d]
+        if mode == 'all':
+            tail1_s = tail1_s.unsqueeze(0).repeat(tail1_t.shape[0], 1, 1) # [B, nentity, 0.9 dim]
+        tail1 = torch.cat((tail1_t, tail1_s), dim=2) # [B, pos/neg, dim]
+        # tail_index for tail
+        tail2_t = self.DE_get_time_embeddings(tail_index + self.nentity, year, month, day) # [B, pos/neg, 0.1 dim]
+        tail2_s = self.dropout(self.entity_embedding[tail_index + self.nentity])# [B, pos/neg, 0.9d]; all : [nentity, 0.9d]
+        if mode == 'all':
+            tail2_s = tail2_s.unsqueeze(0).repeat(tail2_t.shape[0], 1, 1) # [B, nentity, 0.9 dim]
+        tail2 = torch.cat((tail2_t, tail2_s), dim=2) # [B, pos/neg, dim]
+
+        relation = self.dropout(self.relation_embedding[relation_index])
+        relation_inv_index = (relation_index + self.nrelation) % (2 * self.nrelation)
+        relation_inv = self.dropout(self.relation_embedding[relation_inv_index])
 
         if mode == 'all': # head: [B, dim]; tail: [nentity, dim]
-            ((head.unsqueeze(1) * relation.unsqueeze(1)) * tail.unsqueeze(0) + 
-             (head.unsqueeze(1) * aux.unsqueeze(1)) * tail.unsqueeze(0)) / 2.0 # [B, nentity, dim]
+            score = ((head1.unsqueeze(1) * relation.unsqueeze(1)) * tail2 +  
+                    (head2.unsqueeze(1) * relation_inv.unsqueeze(1)) * tail1) / 2.0 # [B, nentity, dim]
+            
         else:
-            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], (head + relation))
-            score = (head + relation).unsqueeze(1) - tail
-        score = self.gamma.item() - torch.norm(score, p=1, dim=2)
-
-        return score
+            if mode == 'single': self.regularizeOnPositiveSamples([head1, relation, tail1, head2, relation_inv, tail2], [[head1 * relation, tail1 * relation_inv], [head2, tail2]]) ## TODO:regu
+            score = ((head1 * relation).unsqueeze(1) * tail2 + (head2 * relation_inv).unsqueeze(1) * tail1) / 2.0
+        return score.sum(dim=2) # [B, pos/neg]
     
     def TAModel(self, head, relation, tail, time_input, inv_relation_mask, mode='single'):
         time_input = torch.concat((relation.unsqueeze(1), time_input), dim=1) # (B, 9, dim)
@@ -285,7 +325,7 @@ class KGEModel(nn.Module):
         if mode == 'all': # head: [B, dim]; tail: [nentity, dim]
             score = (head + relation).unsqueeze(1) - tail.unsqueeze(0)
         else:
-            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], (head + relation))
+            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], [[head + relation], [tail]])
             score = (head + relation).unsqueeze(1) - tail
 
         score = self.gamma.item() - torch.norm(score, p=1, dim=2)
@@ -299,7 +339,7 @@ class KGEModel(nn.Module):
         if mode == 'all':
             score = (head + relation + time).unsqueeze(1) - tail.unsqueeze(0)
         else:
-            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time], (head + relation + time))
+            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time], [[head + relation + time],[tail]])
             score = (head + relation + time).unsqueeze(1) - tail
 
         score = self.gamma.item() - torch.norm(score, p=1, dim=2)
@@ -311,7 +351,7 @@ class KGEModel(nn.Module):
             # for 1(k) vs all: [B, dim] * [dim, N] -> [B, N]
             score = torch.mm(head * relation, tail.transpose(0,1))
         else:
-            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], (head * relation))
+            if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], [[head * relation], [tail]])
             score = torch.sum((head * relation).unsqueeze(1) * tail, dim=-1)
 
         return score
@@ -325,45 +365,26 @@ class KGEModel(nn.Module):
             queries:    combination of heads and relations
         '''
 
-        self.regu = 0
-        times = None
-        aux = None
-        if len(embeddings) == 3:
-            [heads, relations, tails] = embeddings
-        elif len(embeddings) == 4:
-            [heads, relations, tails, times] = embeddings
-        elif len(embeddings) == 5:
-            [heads, relations, tails, times, aux] = embeddings
+        self.regu = 0      
 
         if self.regularizer == 'FRO':
             # squared L2 norm
-            self.regu += heads.norm(p = 2)**2     / heads.shape[0]
-            self.regu += tails.norm(p = 2)**2     / tails.shape[0]
-            self.regu += relations.norm(p = 2)**2 / relations.shape[0]
-            if times is not None:
-                self.regu += times.norm(p = 2)**2     / times.shape[0]
-            if aux is not None:
-                self.regu += aux.norm(p = 2)**2     / aux.shape[0]
-            
+            for embedding in embeddings:
+                self.regu += embedding.norm(p = 2)**2 / embedding.shape[0]
+
         elif self.regularizer == 'NUC':
             # nuclear 3-norm
-            self.regu += heads.norm(p = 3)**3     / heads.shape[0]
-            self.regu += tails.norm(p = 3)**3     / tails.shape[0]
-            self.regu += relations.norm(p = 3)**3 / relations.shape[0]
-            if times is not None:
-                self.regu += times.norm(p = 3)**3     / times.shape[0]
-            if aux is not None:
-                self.regu += aux.norm(p = 3)**3     / aux.shape[0]
+            for embedding in embeddings:
+                self.regu += embedding.norm(p = 3)**3 / embedding.shape[0]
 
         elif self.regularizer == 'DURA':
             # duality-induced regularizer for tensor decomposition models
             # regu = L2(φ(h,r)) + L2(t)
-            self.regu += queries.norm(p = 2)**2 / queries.shape[0]
-            self.regu += tails.norm(p = 2)**2   / tails.shape[0]
-            if times is not None:
-                self.regu += times.norm(p = 2)**2   / times.shape[0] # TODO
-            if aux is not None:
-                self.regu += aux.norm(p = 2)**2     / aux.shape[0]
+            phi, b = queries
+            for phi_ in phi:
+                self.regu += phi_.norm(p = 2)**2 / phi_.shape[0]
+            for b_ in b:
+                self.regu += b_.norm(p = 2)**2 / b_.shape[0]
 
         else: 
             # None
@@ -388,7 +409,7 @@ class KGEModel(nn.Module):
         hr_vec   = torch.cat([re_hrvec, im_hrvec], dim=-1)
 
         # regularization on positive samples
-        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], hr_vec)
+        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail], [[hr_vec], [tail]])
 
         # <φ(h,r), t> -> score
         if mode == 'all':
@@ -419,7 +440,7 @@ class KGEModel(nn.Module):
         hr_vec   = torch.cat([re_hrtvec, im_hrtvec], dim=-1)
 
         # regularization on positive samples
-        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time], hr_vec)
+        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time], [[hr_vec],[tail]])
 
         # <φ(h,r), t> -> score
         if mode == 'all':
@@ -451,7 +472,7 @@ class KGEModel(nn.Module):
         hr_vec   = torch.cat([re_hrtvec, im_hrtvec], dim=-1)
 
         # regularization on positive samples
-        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time, aux], hr_vec)
+        if mode == 'single': self.regularizeOnPositiveSamples([head, relation, tail, time, aux], [[hr_vec], [tail]])
 
         # <φ(h,r), t> -> score
         if mode == 'all':
