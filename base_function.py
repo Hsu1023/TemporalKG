@@ -192,7 +192,7 @@ def embedding_methods(args, params_dict, process_no=0):
 
     # build model
     
-    print(global_cfg.training_strategy)
+    # print(global_cfg.training_strategy)
     kge_model = KGEModel(
         model_name=args.model,
         dataset_name=args.dataset,
