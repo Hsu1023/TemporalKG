@@ -68,18 +68,16 @@ DETransE_cfg = argparse.Namespace()
 DETransE_cfg.eval_params  = {}
 DEDistMult_cfg = argparse.Namespace()
 DEDistMult_cfg.eval_params  = {}
-# DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 256, 'dim': 500, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.010710659179916692, 'regu_weight': 0.002539842581246413, 'advs': 0, 'dropoutRate': 0.00507789104573878, 'gamma': 2.135910021289078, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 DESimplE_cfg = argparse.Namespace()
 DESimplE_cfg.eval_params  = {}
 DESimplE_cfg.eval_params['ICEWS14']       = {'batch_size': 1024, 'dim': 500, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'MR', 'initializer': 'normal', 'lr': 0.0007083614202155056, 'regu_weight': 1.1062383242866668e-08, 'advs': 0, 'dropoutRate': 0.006288114619281126, 'gamma': 18.164912867589063, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}  
 
-DESimplE_cfg.eval_params['ICEWS14_']       = {'batch_size': 1024, 'dim': 500, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'MR', 'initializer': 'normal', 'lr': 0.0007083614202155056, 'regu_weight': 1.1062383242866668e-08, 'advs': 0, 'dropoutRate': 0.006288114619281126, 'gamma': 18.164912867589063, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 ComplEx_cfg = argparse.Namespace()
 ComplEx_cfg.eval_params  = {}
 # 0.484 / 0.440 / 0.506 / 0.562
 ComplEx_cfg.eval_params['wn18rr']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
-ComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
 # 0.352 / 0.263 / 0.387 / 0.530
 ComplEx_cfg.eval_params['FB15k_237']    = {'n_neg': 512, 'regularizer': 'DURA', 'loss_function': 'BCE_adv', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0009706433869179586, 'regu_weight': 0.009753922487127387, 'advs': 1.9300950027456198, 'dropoutRate': 0.22146007031450685, 'gamma': 13.057616683834388, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
 # Val MRR: 0.8394 Test MRR: 0.8385
