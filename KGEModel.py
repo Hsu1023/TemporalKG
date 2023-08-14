@@ -301,7 +301,7 @@ class KGEModel(nn.Module):
         output = output[:, -1, :] # (B, dim)
 
         # TA-XX -> XX
-        return self.model_func[self.model_name[2:]](head, relation, tail, output, inv_relation_mask=[], mode=mode) ## TODO: inv
+        return self.model_func[self.model_name[2:]](head, output, tail, inv_relation_mask=[], mode=mode) ## TODO: inv
     
     def TA_get_time_tokens(self, time_index_):
             time_index = time_index_.cpu()

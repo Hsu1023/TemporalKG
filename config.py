@@ -46,11 +46,14 @@ TComplEx_cfg.eval_params  = {}
 
 
 # TComplEx_cfg.eval_params['ICEWS14']       = {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.00, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+
+TComplEx_cfg.eval_params['ICEWS0515']       = {'batch_size': 512, 'dim': 200, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_uniform', 'lr': 0.0011795441471644335, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.004509612333602986, 'gamma': 1.3824864618251151, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'kVsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 # regu: 0.00 / 0.01 /dropout 0.01
 
 TNTComplEx_cfg = argparse.Namespace()
 TNTComplEx_cfg.eval_params  = {}
 TNTComplEx_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.00034555907276779337, 'regu_weight': 6.082324687567316e-06, 'advs': 0, 'dropoutRate': 0.2610073515640779, 'gamma': 2.528275760407377, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}
+TNTComplEx_cfg.eval_params['ICEWS0515']     = {'batch_size': 1024, 'dim': 2000, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'uniform', 'lr': 0.00033438177591395995, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.2572290403040508, 'gamma': 3.873984163964466, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 TATransE_cfg = argparse.Namespace()
 TATransE_cfg.eval_params  = {}
@@ -69,10 +72,11 @@ DETransE_cfg.eval_params  = {}
 DEDistMult_cfg = argparse.Namespace()
 DEDistMult_cfg.eval_params  = {}
 DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.010710659179916692, 'regu_weight': 0.002539842581246413, 'advs': 0, 'dropoutRate': 0.00507789104573878, 'gamma': 2.135910021289078, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
 DESimplE_cfg = argparse.Namespace()
 DESimplE_cfg.eval_params  = {}
-DESimplE_cfg.eval_params['ICEWS14']       = {'batch_size': 1024, 'dim': 500, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'MR', 'initializer': 'normal', 'lr': 0.0007083614202155056, 'regu_weight': 1.1062383242866668e-08, 'advs': 0, 'dropoutRate': 0.006288114619281126, 'gamma': 18.164912867589063, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}  
-
+DESimplE_cfg.eval_params['ICEWS14']       = {'batch_size': 128, 'dim': 1000, 'n_neg': 2048, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'xavier_uniform', 'lr': 0.008477906059412963, 'regu_weight': 0.005162288834055178, 'advs': 0, 'dropoutRate': 0.011001241682390793, 'gamma': 9.336988766350817, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+DESimplE_cfg.eval_params['ICEWS0515']     = {'batch_size': 128, 'dim': 1000, 'n_neg': 2048, 'regularizer': 'DURA', 'loss_function': 'CE', 'initializer': 'uniform', 'lr': 0.005916994968825895, 'regu_weight': 0.00034301293691611627, 'advs': 0, 'dropoutRate': 0.01036014317353685, 'gamma': 7.838165181890632, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 ComplEx_cfg = argparse.Namespace()
 ComplEx_cfg.eval_params  = {}

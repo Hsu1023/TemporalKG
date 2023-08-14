@@ -298,7 +298,7 @@ def embedding_methods(args, params_dict, process_no=0):
             break
            
         # evaluate on validate/test set
-        if (step+1) % args.valid_steps == 0 or step == 0:
+        if (step+1) % args.valid_steps == 0:
             # evaluate on validate set
             try:
                 metrics = kge_model.test_step(kge_model, args, 'validate')
@@ -348,9 +348,12 @@ def embedding_methods(args, params_dict, process_no=0):
 
                     best_metrics['test_metrics'] = tst_metrics
                     test_mrr                     = tst_metrics['mrr']
+                    hits1                        = tst_metrics['hits@1']
+                    hits3                        = tst_metrics['hits@3']
+                    hits10                       = tst_metrics['hits@10']
                     test_history[step+1]         = test_mrr
-                    saveLogWriter('==> pid: {}, No.{} iter, test mrr={}'.format(process_no, step+1, test_mrr), 'log.txt')###
-                    logging.info('==> pid: {}, No.{} iter, test mrr={}'.format(process_no, step+1, test_mrr))
+                    saveLogWriter('==> pid: {}, No.{} iter, test mrr={}, hits@1={:.4f}, hits@3={:.4f}, hits@10={:.4f}'.format(process_no, step+1, test_mrr, hits1, hits3, hits10), 'log.txt')###
+                    logging.info('==> pid: {}, No.{} iter, test mrr={}, hits@1={:.4f}, hits@3={:.4f}, hits@10={:.4f}'.format(process_no, step+1, test_mrr, hits1, hits3, hits10),)
 
             else:
                 # early stopping 
