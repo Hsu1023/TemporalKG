@@ -58,10 +58,12 @@ TNTComplEx_cfg.eval_params['ICEWS0515']     = {'batch_size': 1024, 'dim': 2000, 
 TATransE_cfg = argparse.Namespace()
 TATransE_cfg.eval_params  = {}
 TATransE_cfg.eval_params['ICEWS14']       = {'batch_size': 1024, 'dim': 1000, 'n_neg': 512, 'regularizer': 'None', 'loss_function': 'MR', 'initializer': 'xavier_normal', 'lr': 0.00034204504228734563, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.03463374768100025, 'gamma': 7.479135987183745, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+TATransE_cfg.eval_params['ICEWS0515']     = {'batch_size': 1024, 'dim': 100, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'xavier_uniform', 'lr': 0.017467928275084848, 'regu_weight': 0.007689156494047995, 'advs': 0, 'dropoutRate': 0.08857030429836464, 'gamma': 22.9424052465694, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 TADistMult_cfg = argparse.Namespace()
 TADistMult_cfg.eval_params  = {}
 TADistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0007091785641364198, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.07600900599418843, 'gamma': 10.25702739117332, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+TADistMult_cfg.eval_params['ICEWS0515']     = {'batch_size': 1024, 'dim': 1000, 'n_neg': 2048, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'xavier_uniform', 'lr': 0.00029562570923630065, 'regu_weight': 7.99160849749636e-05, 'advs': 0, 'dropoutRate': 0.25634951962491603, 'gamma': 1.8968304993355662, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 TTransE_cfg = argparse.Namespace()
 TTransE_cfg.eval_params  = {}
@@ -72,6 +74,7 @@ DETransE_cfg.eval_params  = {}
 DEDistMult_cfg = argparse.Namespace()
 DEDistMult_cfg.eval_params  = {}
 DEDistMult_cfg.eval_params['ICEWS14']       = {'batch_size': 512, 'dim': 2000, 'n_neg': 128, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.010710659179916692, 'regu_weight': 0.002539842581246413, 'advs': 0, 'dropoutRate': 0.00507789104573878, 'gamma': 2.135910021289078, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+DEDistMult_cfg.eval_params['ICEWS0515']     = {'batch_size': 512, 'dim': 1000, 'n_neg': 512, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'normal', 'lr': 0.002031070040008756, 'regu_weight': 1.2202451775906147e-08, 'advs': 0, 'dropoutRate': 0.035070684533543985, 'gamma': 22.180121667428423, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
 
 DESimplE_cfg = argparse.Namespace()
 DESimplE_cfg.eval_params  = {}

@@ -1,0 +1,474 @@
+2023-04-25 16:57:15,160 INFO     preparing training data ...
+2023-04-25 16:59:08,936 INFO     preparing training data ...
+2023-04-25 16:59:34,722 INFO     finish preparing
+2023-04-25 16:59:34,723 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 1.9300950027456198, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 16:59:34,723 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 16:59:34,776 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 16:59:42,999 INFO     ==> pid: 0, No.1 iter, val mrr=0.007451504376429515
+2023-04-25 16:59:48,070 INFO     ==> pid: 0, No.1 iter, test mrr=0.006296326236287065
+2023-04-25 17:00:25,560 INFO     preparing training data ...
+2023-04-25 17:00:54,389 INFO     finish preparing
+2023-04-25 17:00:54,390 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 1.9300950027456198, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 17:00:54,390 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 17:00:54,422 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 17:01:01,170 INFO     ==> pid: 0, No.1 iter, val mrr=0.006822216849724585
+2023-04-25 17:01:04,915 INFO     ==> pid: 0, No.1 iter, test mrr=0.007285279276459089
+2023-04-25 17:02:47,529 INFO     ==> pid: 0, No.2500 iter, val mrr=0.20211625853591647
+2023-04-25 17:02:51,378 INFO     ==> pid: 0, No.2500 iter, test mrr=0.19576911600964844
+2023-04-25 17:04:34,709 INFO     ==> pid: 0, No.5000 iter, val mrr=0.1958990902385922
+2023-04-25 17:06:18,594 INFO     ==> pid: 0, No.7500 iter, val mrr=0.21682089989468561
+2023-04-25 17:06:22,348 INFO     ==> pid: 0, No.7500 iter, test mrr=0.21160983513290213
+2023-04-25 17:08:01,251 INFO     ==> pid: 0, No.10000 iter, val mrr=0.2205204800694299
+2023-04-25 17:08:05,023 INFO     ==> pid: 0, No.10000 iter, test mrr=0.21808653876646922
+2023-04-25 17:31:17,528 INFO     preparing training data ...
+2023-04-25 17:31:43,852 INFO     finish preparing
+2023-04-25 17:31:43,852 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 1.9300950027456198, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 17:31:43,852 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.002, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 17:31:43,876 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 17:31:55,678 INFO     ==> pid: 0, No.1 iter, val mrr=0.006356514533691184
+2023-04-25 17:32:03,763 INFO     ==> pid: 0, No.1 iter, test mrr=0.007087947608628014
+2023-04-25 17:35:12,436 INFO     ==> pid: 0, No.2500 iter, val mrr=0.20304257132741926
+2023-04-25 17:35:21,725 INFO     ==> pid: 0, No.2500 iter, test mrr=0.19230356423632197
+2023-04-25 17:38:29,522 INFO     ==> pid: 0, No.5000 iter, val mrr=0.19893331838162298
+2023-04-25 17:41:30,001 INFO     preparing training data ...
+2023-04-25 17:41:40,734 INFO     ==> pid: 0, No.7500 iter, val mrr=0.20430571554643337
+2023-04-25 17:41:49,033 INFO     ==> pid: 0, No.7500 iter, test mrr=0.19864900029059282
+2023-04-25 17:41:59,993 INFO     finish preparing
+2023-04-25 17:41:59,994 INFO     Evaluation params for TComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 17:41:59,994 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 17:42:00,128 INFO     ==> pid: 0, num_parameters for TComplEx: 15906002
+2023-04-25 17:42:18,222 INFO     ==> pid: 0, No.1 iter, val mrr=0.0012717030703711936
+2023-04-25 17:42:32,736 INFO     ==> pid: 0, No.1 iter, test mrr=0.0012727130939625194
+2023-04-25 17:47:46,215 INFO     ==> pid: 0, No.10000 iter, val mrr=0.19988320551857025
+2023-04-25 17:49:55,192 INFO     ==> pid: 0, No.2500 iter, val mrr=0.0008701797681603299
+2023-04-25 17:53:56,513 INFO     ==> pid: 0, No.12500 iter, val mrr=0.2203319325533306
+2023-04-25 17:54:14,843 INFO     ==> pid: 0, No.12500 iter, test mrr=0.21056190649052708
+2023-04-25 17:57:18,947 INFO     ==> pid: 0, No.5000 iter, val mrr=0.0011454465319120993
+2023-04-25 18:00:25,619 INFO     ==> pid: 0, No.15000 iter, val mrr=0.19823015876062158
+2023-04-25 18:04:43,802 INFO     ==> pid: 0, No.7500 iter, val mrr=0.0009944831001056334
+2023-04-25 18:06:36,981 INFO     ==> pid: 0, No.17500 iter, val mrr=0.21190655124130092
+2023-04-25 18:12:09,309 INFO     ==> pid: 0, No.10000 iter, val mrr=0.0009961204319343562
+2023-04-25 18:12:47,226 INFO     ==> pid: 0, No.20000 iter, val mrr=0.21459459834884112
+2023-04-25 18:19:01,551 INFO     ==> pid: 0, No.22500 iter, val mrr=0.3064048409401019
+2023-04-25 18:19:19,213 INFO     ==> pid: 0, No.22500 iter, test mrr=0.29723687431257584
+2023-04-25 18:19:32,189 INFO     ==> pid: 0, No.12500 iter, val mrr=0.0010258218228284869
+2023-04-25 18:25:31,258 INFO     ==> pid: 0, No.25000 iter, val mrr=0.29575790619071707
+2023-04-25 18:26:54,688 INFO     ==> pid: 0, No.15000 iter, val mrr=0.0009232240772852875
+2023-04-25 18:31:40,623 INFO     ==> pid: 0, No.27500 iter, val mrr=0.3027495963163646
+2023-04-25 18:34:20,452 INFO     ==> pid: 0, No.17500 iter, val mrr=0.0008972339368505428
+2023-04-25 18:36:40,231 INFO     ==> pid: 0, No.30000 iter, val mrr=0.29923666666116944
+2023-04-25 18:37:04,844 INFO     preparing training data ...
+2023-04-25 18:37:34,110 INFO     finish preparing
+2023-04-25 18:37:34,110 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.5, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:37:34,110 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.5, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:37:34,149 INFO     ==> pid: 0, num_parameters for TComplEx: 3976502
+2023-04-25 18:37:48,234 INFO     ==> pid: 0, No.1 iter, val mrr=0.012319156010703162
+2023-04-25 18:37:51,224 INFO     ==> pid: 0, No.1 iter, test mrr=0.011425034367035795
+2023-04-25 18:39:24,554 INFO     ==> pid: 0, No.2500 iter, val mrr=0.002705041631045475
+2023-04-25 18:39:45,649 INFO     preparing training data ...
+2023-04-25 18:40:14,081 INFO     finish preparing
+2023-04-25 18:40:14,082 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:40:14,082 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:40:14,118 INFO     ==> pid: 0, num_parameters for TComplEx: 3976502
+2023-04-25 18:40:20,327 INFO     ==> pid: 0, No.1 iter, val mrr=0.012067330750097999
+2023-04-25 18:40:23,543 INFO     ==> pid: 0, No.1 iter, test mrr=0.01161718729252538
+2023-04-25 18:41:56,707 INFO     ==> pid: 0, No.2500 iter, val mrr=0.002224843805723639
+2023-04-25 18:42:30,016 INFO     preparing training data ...
+2023-04-25 18:43:01,266 INFO     finish preparing
+2023-04-25 18:43:01,267 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:43:01,267 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:43:01,316 INFO     ==> pid: 0, num_parameters for TComplEx: 3976502
+2023-04-25 18:43:07,746 INFO     ==> pid: 0, No.1 iter, val mrr=0.007571083975170468
+2023-04-25 18:43:10,826 INFO     ==> pid: 0, No.1 iter, test mrr=0.008191751671739106
+2023-04-25 18:44:43,524 INFO     ==> pid: 0, No.2500 iter, val mrr=0.056517610134161005
+2023-04-25 18:44:46,601 INFO     ==> pid: 0, No.2500 iter, test mrr=0.05447534715535607
+2023-04-25 18:44:58,294 INFO     preparing training data ...
+2023-04-25 18:45:29,540 INFO     finish preparing
+2023-04-25 18:45:29,540 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:45:29,541 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:45:29,561 INFO     ==> pid: 0, num_parameters for TComplEx: 1590602
+2023-04-25 18:45:36,024 INFO     ==> pid: 0, No.1 iter, val mrr=0.007252943325304211
+2023-04-25 18:45:39,046 INFO     ==> pid: 0, No.1 iter, test mrr=0.00717562936652328
+2023-04-25 18:47:08,564 INFO     ==> pid: 0, No.2500 iter, val mrr=0.01947798628951894
+2023-04-25 18:47:11,635 INFO     ==> pid: 0, No.2500 iter, test mrr=0.017647384480508198
+2023-04-25 18:47:50,160 INFO     preparing training data ...
+2023-04-25 18:48:21,149 INFO     finish preparing
+2023-04-25 18:48:21,149 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:48:21,150 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:48:21,187 INFO     ==> pid: 0, num_parameters for TComplEx: 1590602
+2023-04-25 18:48:27,513 INFO     ==> pid: 0, No.1 iter, val mrr=0.033715600946387085
+2023-04-25 18:48:30,515 INFO     ==> pid: 0, No.1 iter, test mrr=0.03376749865295205
+2023-04-25 18:50:00,378 INFO     ==> pid: 0, No.2500 iter, val mrr=0.008988409570762078
+2023-04-25 18:50:33,028 INFO     preparing training data ...
+2023-04-25 18:51:03,905 INFO     finish preparing
+2023-04-25 18:51:03,905 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:51:03,906 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:51:03,928 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 18:51:10,397 INFO     ==> pid: 0, No.1 iter, val mrr=0.03523226696423626
+2023-04-25 18:51:13,804 INFO     ==> pid: 0, No.1 iter, test mrr=0.032181389457979284
+2023-04-25 18:52:48,806 INFO     ==> pid: 0, No.2500 iter, val mrr=0.018353073563481207
+2023-04-25 18:53:24,888 INFO     preparing training data ...
+2023-04-25 18:53:53,461 INFO     finish preparing
+2023-04-25 18:53:53,462 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 18:53:53,462 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 18:53:53,486 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 18:53:59,932 INFO     ==> pid: 0, No.1 iter, val mrr=0.006785780054664549
+2023-04-25 18:54:03,189 INFO     ==> pid: 0, No.1 iter, test mrr=0.0072224167852831984
+2023-04-25 18:55:34,143 INFO     ==> pid: 0, No.2500 iter, val mrr=0.20134785016763443
+2023-04-25 18:55:37,444 INFO     ==> pid: 0, No.2500 iter, test mrr=0.19701761885243388
+2023-04-25 18:57:08,129 INFO     ==> pid: 0, No.5000 iter, val mrr=0.19125419116052148
+2023-04-25 18:58:39,502 INFO     ==> pid: 0, No.7500 iter, val mrr=0.21406282144983896
+2023-04-25 18:58:42,633 INFO     ==> pid: 0, No.7500 iter, test mrr=0.21149223232012337
+2023-04-25 19:00:13,650 INFO     ==> pid: 0, No.10000 iter, val mrr=0.21034491350063853
+2023-04-25 19:01:44,561 INFO     ==> pid: 0, No.12500 iter, val mrr=0.22183212096285543
+2023-04-25 19:01:47,676 INFO     ==> pid: 0, No.12500 iter, test mrr=0.2176694935333092
+2023-04-25 19:03:18,179 INFO     ==> pid: 0, No.15000 iter, val mrr=0.21737464362344844
+2023-04-25 19:03:55,085 INFO     preparing training data ...
+2023-04-25 19:04:23,983 INFO     finish preparing
+2023-04-25 19:04:23,983 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 19:04:23,983 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 19:04:24,062 INFO     ==> pid: 0, num_parameters for TComplEx: 3861502
+2023-04-25 19:04:30,752 INFO     ==> pid: 0, No.1 iter, val mrr=0.006226224437626974
+2023-04-25 19:04:34,174 INFO     ==> pid: 0, No.1 iter, test mrr=0.006800038096178254
+2023-04-25 19:06:08,581 INFO     ==> pid: 0, No.2500 iter, val mrr=0.2592166540129537
+2023-04-25 19:06:11,925 INFO     ==> pid: 0, No.2500 iter, test mrr=0.25539003098090707
+2023-04-25 19:07:07,969 INFO     preparing training data ...
+2023-04-25 19:07:37,018 INFO     finish preparing
+2023-04-25 19:07:37,019 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 1000, 'lr': 0.2, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 19:07:37,019 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 1000, 'lr': 0.2, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 19:07:37,105 INFO     ==> pid: 0, num_parameters for TComplEx: 7723002
+2023-04-25 19:07:43,326 INFO     ==> pid: 0, No.1 iter, val mrr=0.006538479793908057
+2023-04-25 19:07:46,694 INFO     ==> pid: 0, No.1 iter, test mrr=0.00701759816127468
+2023-04-25 19:09:27,041 INFO     ==> pid: 0, No.2500 iter, val mrr=0.2989958493140657
+2023-04-25 19:09:30,376 INFO     ==> pid: 0, No.2500 iter, test mrr=0.2930207761369165
+2023-04-25 19:10:24,656 INFO     preparing training data ...
+2023-04-25 19:10:53,356 INFO     finish preparing
+2023-04-25 19:10:53,356 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 1000, 'lr': 0.5, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 19:10:53,357 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 1000, 'lr': 0.5, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 19:10:53,419 INFO     ==> pid: 0, num_parameters for TComplEx: 7723002
+2023-04-25 19:10:59,856 INFO     ==> pid: 0, No.1 iter, val mrr=0.007198016510498545
+2023-04-25 19:11:03,160 INFO     ==> pid: 0, No.1 iter, test mrr=0.007116386668911539
+2023-04-25 19:12:43,847 INFO     ==> pid: 0, No.2500 iter, val mrr=0.24651221628974915
+2023-04-25 19:12:47,199 INFO     ==> pid: 0, No.2500 iter, test mrr=0.24001695286817146
+2023-04-25 19:14:27,890 INFO     ==> pid: 0, No.5000 iter, val mrr=0.36608580871186885
+2023-04-25 19:14:31,245 INFO     ==> pid: 0, No.5000 iter, test mrr=0.35966876567552813
+2023-04-25 19:16:15,133 INFO     ==> pid: 0, No.7500 iter, val mrr=0.3886806057011149
+2023-04-25 19:16:18,477 INFO     ==> pid: 0, No.7500 iter, test mrr=0.38231333719856564
+2023-04-25 19:17:59,939 INFO     ==> pid: 0, No.10000 iter, val mrr=0.39548763524971575
+2023-04-25 19:18:03,350 INFO     ==> pid: 0, No.10000 iter, test mrr=0.38569748239151136
+2023-04-25 19:19:22,689 INFO     preparing training data ...
+2023-04-25 19:19:45,614 INFO     ==> pid: 0, No.12500 iter, val mrr=0.4001125246600364
+2023-04-25 19:19:48,777 INFO     ==> pid: 0, No.12500 iter, test mrr=0.39804705549912894
+2023-04-25 19:19:54,180 INFO     finish preparing
+2023-04-25 19:19:54,180 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 19:19:54,181 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 19:19:54,204 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 19:20:05,309 INFO     ==> pid: 0, No.1 iter, val mrr=0.0102792430880043
+2023-04-25 19:20:12,236 INFO     ==> pid: 0, No.1 iter, test mrr=0.010754594404673362
+2023-04-25 19:22:56,774 INFO     ==> pid: 0, No.15000 iter, val mrr=0.40695428458352423
+2023-04-25 19:23:03,750 INFO     ==> pid: 0, No.15000 iter, test mrr=0.40099933353682793
+2023-04-25 19:23:19,480 INFO     ==> pid: 0, No.2500 iter, val mrr=0.06585721000663367
+2023-04-25 19:23:26,198 INFO     ==> pid: 0, No.2500 iter, test mrr=0.06660653464641832
+2023-04-25 19:25:51,642 INFO     ==> pid: 0, No.17500 iter, val mrr=0.40294356306162693
+2023-04-25 19:26:09,289 INFO     preparing training data ...
+2023-04-25 19:26:19,677 INFO     preparing training data ...
+2023-04-25 19:26:50,409 INFO     finish preparing
+2023-04-25 19:26:50,409 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 19:26:50,410 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 19:26:50,432 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 19:27:00,849 INFO     ==> pid: 0, No.1 iter, val mrr=0.006296102088851183
+2023-04-25 19:27:08,867 INFO     ==> pid: 0, No.1 iter, test mrr=0.006711009326483738
+2023-04-25 19:28:08,017 INFO     ==> pid: 0, No.20000 iter, val mrr=0.4098823286253714
+2023-04-25 19:28:15,849 INFO     ==> pid: 0, No.20000 iter, test mrr=0.40263481583503274
+2023-04-25 19:30:10,709 INFO     ==> pid: 0, No.2500 iter, val mrr=0.19929505487675533
+2023-04-25 19:30:17,764 INFO     ==> pid: 0, No.2500 iter, test mrr=0.19226405819021658
+2023-04-25 19:31:27,616 INFO     ==> pid: 0, No.22500 iter, val mrr=0.41353457556163997
+2023-04-25 19:31:34,301 INFO     ==> pid: 0, No.22500 iter, test mrr=0.402896642896187
+2023-04-25 19:33:20,107 INFO     ==> pid: 0, No.5000 iter, val mrr=0.19419884184190905
+2023-04-25 19:34:48,222 INFO     ==> pid: 0, No.25000 iter, val mrr=0.4071310095123649
+2023-04-25 19:36:26,354 INFO     ==> pid: 0, No.7500 iter, val mrr=0.2034886992187648
+2023-04-25 19:36:34,301 INFO     ==> pid: 0, No.7500 iter, test mrr=0.20061733873409268
+2023-04-25 19:38:00,631 INFO     ==> pid: 0, No.27500 iter, val mrr=0.4080415787639647
+2023-04-25 19:39:38,536 INFO     ==> pid: 0, No.10000 iter, val mrr=0.19967087116962084
+2023-04-25 19:41:12,437 INFO     ==> pid: 0, No.30000 iter, val mrr=0.4069860015366846
+2023-04-25 19:42:40,519 INFO     ==> pid: 0, No.12500 iter, val mrr=0.2110103703786227
+2023-04-25 19:42:48,190 INFO     ==> pid: 0, No.12500 iter, test mrr=0.207764123793215
+2023-04-25 19:44:23,417 INFO     ==> pid: 0, No.32500 iter, val mrr=0.43571226528738244
+2023-04-25 19:44:31,113 INFO     ==> pid: 0, No.32500 iter, test mrr=0.427725558584925
+2023-04-25 19:45:50,034 INFO     ==> pid: 0, No.15000 iter, val mrr=0.218931566371087
+2023-04-25 19:45:57,417 INFO     ==> pid: 0, No.15000 iter, test mrr=0.2116949901847953
+2023-04-25 19:47:40,160 INFO     ==> pid: 0, No.35000 iter, val mrr=0.42169130134834676
+2023-04-25 19:48:59,148 INFO     ==> pid: 0, No.17500 iter, val mrr=0.22108826951015093
+2023-04-25 19:49:06,737 INFO     ==> pid: 0, No.17500 iter, test mrr=0.21644529679129126
+2023-04-25 19:50:51,740 INFO     ==> pid: 0, No.37500 iter, val mrr=0.41975224233743125
+2023-04-25 19:52:06,854 INFO     ==> pid: 0, No.20000 iter, val mrr=0.23540299159894382
+2023-04-25 19:52:13,814 INFO     ==> pid: 0, No.20000 iter, test mrr=0.23439708151032015
+2023-04-25 19:54:01,419 INFO     ==> pid: 0, No.40000 iter, val mrr=0.414850851786945
+2023-04-25 19:55:06,401 INFO     ==> pid: 0, No.22500 iter, val mrr=0.22509051560254098
+2023-04-25 19:57:08,626 INFO     ==> pid: 0, No.42500 iter, val mrr=0.4324132226924446
+2023-04-25 19:58:02,391 INFO     ==> pid: 0, No.25000 iter, val mrr=0.21687724830466515
+2023-04-25 20:00:14,603 INFO     ==> pid: 0, No.45000 iter, val mrr=0.4236532630135572
+2023-04-25 20:00:59,030 INFO     ==> pid: 0, No.27500 iter, val mrr=0.23070301738135074
+2023-04-25 20:03:20,714 INFO     ==> pid: 0, No.47500 iter, val mrr=0.428770694788383
+2023-04-25 20:03:52,504 INFO     ==> pid: 0, No.30000 iter, val mrr=0.305741643666293
+2023-04-25 20:03:59,949 INFO     ==> pid: 0, No.30000 iter, test mrr=0.2994787382658603
+2023-04-25 20:06:28,544 INFO     ==> pid: 0, No.50000 iter, val mrr=0.434002469423573
+2023-04-25 20:06:54,433 INFO     ==> pid: 0, No.32500 iter, val mrr=0.29702584310208796
+2023-04-25 20:09:32,902 INFO     ==> pid: 0, No.52500 iter, val mrr=0.4355820719934207
+2023-04-25 20:09:47,107 INFO     ==> pid: 0, No.35000 iter, val mrr=0.2941659180857707
+2023-04-25 20:12:37,707 INFO     ==> pid: 0, No.55000 iter, val mrr=0.4357186200504426
+2023-04-25 20:12:42,641 INFO     ==> pid: 0, No.37500 iter, val mrr=0.2842677204630793
+2023-04-25 20:12:45,461 INFO     ==> pid: 0, No.55000 iter, test mrr=0.4268774878133219
+2023-04-25 20:15:36,669 INFO     ==> pid: 0, No.40000 iter, val mrr=0.37024809139714426
+2023-04-25 20:15:43,882 INFO     ==> pid: 0, No.40000 iter, test mrr=0.3612407446297785
+2023-04-25 20:15:51,446 INFO     ==> pid: 0, No.57500 iter, val mrr=0.4333208773897102
+2023-04-25 20:18:41,117 INFO     ==> pid: 0, No.42500 iter, val mrr=0.3846965468108879
+2023-04-25 20:18:47,617 INFO     ==> pid: 0, No.42500 iter, test mrr=0.37362021489499986
+2023-04-25 20:18:55,765 INFO     ==> pid: 0, No.60000 iter, val mrr=0.4390404571410107
+2023-04-25 20:19:02,430 INFO     ==> pid: 0, No.60000 iter, test mrr=0.43350170007169664
+2023-04-25 20:21:28,639 INFO     preparing training data ...
+2023-04-25 20:21:51,931 INFO     ==> pid: 0, No.62500 iter, val mrr=0.44187635492621574
+2023-04-25 20:21:55,342 INFO     ==> pid: 0, No.62500 iter, test mrr=0.43647095307627093
+2023-04-25 20:21:57,029 INFO     finish preparing
+2023-04-25 20:21:57,030 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 20:21:57,030 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 20:21:57,030 INFO     ==> [Error] fail in checkTrainingStrategy
+2023-04-25 20:23:06,074 INFO     preparing training data ...
+2023-04-25 20:23:36,534 INFO     preparing training data ...
+2023-04-25 20:23:42,082 INFO     ==> pid: 0, No.65000 iter, val mrr=0.4331709138700986
+2023-04-25 20:24:06,560 INFO     finish preparing
+2023-04-25 20:24:06,560 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 20:24:06,560 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 20:24:06,583 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:25:02,122 INFO     preparing training data ...
+2023-04-25 20:25:30,846 INFO     ==> pid: 0, No.67500 iter, val mrr=0.43367709310315555
+2023-04-25 20:25:34,155 INFO     finish preparing
+2023-04-25 20:25:34,155 INFO     Evaluation params for TComplEx: {'n_neg': 1024, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 20:25:34,156 INFO     ==> pid: 0, proparams_dict: {'n_neg': 1024, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 12, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 20:25:34,183 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:25:44,764 INFO     ==> pid: 0, No.1 iter, val mrr=0.035578808725091574
+2023-04-25 20:25:51,012 INFO     ==> pid: 0, No.1 iter, test mrr=0.03609591290767626
+2023-04-25 20:29:25,249 INFO     ==> pid: 0, No.70000 iter, val mrr=0.4366387471027189
+2023-04-25 20:30:22,024 INFO     ==> pid: 0, No.2500 iter, val mrr=0.3027514584726226
+2023-04-25 20:30:28,738 INFO     ==> pid: 0, No.2500 iter, test mrr=0.2918080626436957
+2023-04-25 20:32:54,731 INFO     preparing training data ...
+2023-04-25 20:33:24,318 INFO     finish preparing
+2023-04-25 20:33:24,318 INFO     Evaluation params for TComplEx: {'n_neg': 10000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 20:33:24,319 INFO     ==> pid: 0, proparams_dict: {'n_neg': 10000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 20:33:24,348 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:33:27,011 WARNING  out of memory in training step
+2023-04-25 20:33:50,815 INFO     ==> pid: 0, No.5000 iter, val mrr=0.11440519459165432
+2023-04-25 20:33:51,496 INFO     preparing training data ...
+2023-04-25 20:34:20,829 INFO     finish preparing
+2023-04-25 20:34:20,829 INFO     Evaluation params for TComplEx: {'n_neg': 10000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 20:34:20,830 INFO     ==> pid: 0, proparams_dict: {'n_neg': 10000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 20:34:20,866 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:34:23,381 WARNING  out of memory in training step
+2023-04-25 20:34:39,346 INFO     preparing training data ...
+2023-04-25 20:35:08,526 INFO     finish preparing
+2023-04-25 20:35:08,526 INFO     Evaluation params for TComplEx: {'n_neg': 5000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 20:35:08,527 INFO     ==> pid: 0, proparams_dict: {'n_neg': 5000, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 20:35:08,556 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:35:15,896 INFO     ==> pid: 0, No.1 iter, val mrr=0.03283584675408917
+2023-04-25 20:35:19,641 INFO     ==> pid: 0, No.1 iter, test mrr=0.0336001378344943
+2023-04-25 20:36:29,104 INFO     ==> pid: 0, No.7500 iter, val mrr=0.238283339320262
+2023-04-25 20:41:16,754 INFO     preparing training data ...
+2023-04-25 20:41:48,047 INFO     finish preparing
+2023-04-25 20:41:48,047 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 20:41:48,048 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'MR', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 20:41:48,048 INFO     ==> [Error] fail in checkTrainingStrategy
+2023-04-25 20:42:12,576 INFO     ==> pid: 0, No.2500 iter, val mrr=0.34951201829300915
+2023-04-25 20:42:16,434 INFO     ==> pid: 0, No.2500 iter, test mrr=0.3368731624296273
+2023-04-25 20:49:03,257 INFO     ==> pid: 0, No.5000 iter, val mrr=0.3494348736687499
+2023-04-25 20:53:29,492 INFO     preparing training data ...
+2023-04-25 20:53:57,776 INFO     finish preparing
+2023-04-25 20:53:57,776 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 20:53:57,776 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 200, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 20:53:57,810 INFO     ==> pid: 0, num_parameters for TComplEx: 1544602
+2023-04-25 20:54:05,770 INFO     ==> pid: 0, No.1 iter, val mrr=0.0071840387524640835
+2023-04-25 20:54:10,073 INFO     ==> pid: 0, No.1 iter, test mrr=0.006877905013631243
+2023-04-25 20:55:46,906 INFO     ==> pid: 0, No.7500 iter, val mrr=0.2900236292909302
+2023-04-25 20:55:53,879 INFO     ==> pid: 0, No.2500 iter, val mrr=0.18146824499367822
+2023-04-25 20:55:57,515 INFO     ==> pid: 0, No.2500 iter, test mrr=0.17592920605665122
+2023-04-25 20:57:40,931 INFO     ==> pid: 0, No.5000 iter, val mrr=0.20586794036797046
+2023-04-25 20:57:44,812 INFO     ==> pid: 0, No.5000 iter, test mrr=0.20125820250999532
+2023-04-25 20:59:33,974 INFO     ==> pid: 0, No.7500 iter, val mrr=0.20880410967042884
+2023-04-25 20:59:37,671 INFO     ==> pid: 0, No.7500 iter, test mrr=0.20446956018915297
+2023-04-25 21:01:16,776 INFO     ==> pid: 0, No.10000 iter, val mrr=0.20160424555979758
+2023-04-25 21:02:05,779 INFO     preparing training data ...
+2023-04-25 21:02:26,212 INFO     ==> pid: 0, No.10000 iter, val mrr=0.32591008013363487
+2023-04-25 21:02:36,693 INFO     finish preparing
+2023-04-25 21:02:36,693 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-25 21:02:36,693 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1024, 'dim': 500, 'lr': 0.1, 'regu_weight': 0.0012, 'advs': 0, 'dropoutRate': 0.02, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-25 21:02:36,756 INFO     ==> pid: 0, num_parameters for TComplEx: 3861502
+2023-04-25 21:02:43,690 INFO     ==> pid: 0, No.1 iter, val mrr=0.007558069853100011
+2023-04-25 21:02:47,446 INFO     ==> pid: 0, No.1 iter, test mrr=0.006686138878667065
+2023-04-25 21:04:26,910 INFO     ==> pid: 0, No.2500 iter, val mrr=0.26574474323761604
+2023-04-25 21:04:30,459 INFO     ==> pid: 0, No.2500 iter, test mrr=0.2611183908862206
+2023-04-25 21:06:11,326 INFO     ==> pid: 0, No.5000 iter, val mrr=0.30100691936280843
+2023-04-25 21:06:14,753 INFO     ==> pid: 0, No.5000 iter, test mrr=0.2944019086624678
+2023-04-25 21:07:55,394 INFO     ==> pid: 0, No.7500 iter, val mrr=0.3195529761370044
+2023-04-25 21:07:59,181 INFO     ==> pid: 0, No.7500 iter, test mrr=0.3108546659240598
+2023-04-25 21:09:08,692 INFO     ==> pid: 0, No.12500 iter, val mrr=0.4061319701724454
+2023-04-25 21:09:12,194 INFO     ==> pid: 0, No.12500 iter, test mrr=0.3957837676316894
+2023-04-25 21:09:39,512 INFO     ==> pid: 0, No.10000 iter, val mrr=0.3212038488425212
+2023-04-25 21:09:42,978 INFO     ==> pid: 0, No.10000 iter, test mrr=0.3173535592625463
+2023-04-25 21:11:23,074 INFO     ==> pid: 0, No.12500 iter, val mrr=0.3285048668015577
+2023-04-25 21:11:26,587 INFO     ==> pid: 0, No.12500 iter, test mrr=0.3215912515417771
+2023-04-25 21:13:06,346 INFO     ==> pid: 0, No.15000 iter, val mrr=0.3381111666518611
+2023-04-25 21:13:09,818 INFO     ==> pid: 0, No.15000 iter, test mrr=0.330861131121978
+2023-04-25 21:14:50,276 INFO     ==> pid: 0, No.17500 iter, val mrr=0.3353039529853515
+2023-04-25 21:15:54,772 INFO     ==> pid: 0, No.15000 iter, val mrr=0.39933567845579715
+2023-04-25 21:16:30,097 INFO     ==> pid: 0, No.20000 iter, val mrr=0.3445554965623407
+2023-04-25 21:16:33,656 INFO     ==> pid: 0, No.20000 iter, test mrr=0.3347684565115934
+2023-04-25 21:18:14,539 INFO     ==> pid: 0, No.22500 iter, val mrr=0.3522492798445068
+2023-04-25 21:18:17,968 INFO     ==> pid: 0, No.22500 iter, test mrr=0.3446508631956073
+2023-04-25 21:19:58,387 INFO     ==> pid: 0, No.25000 iter, val mrr=0.3539203300578974
+2023-04-25 21:20:01,788 INFO     ==> pid: 0, No.25000 iter, test mrr=0.34570278052397796
+2023-04-25 21:21:43,726 INFO     ==> pid: 0, No.27500 iter, val mrr=0.34846051240025594
+2023-04-25 21:22:37,694 INFO     ==> pid: 0, No.17500 iter, val mrr=0.40227901194096943
+2023-04-25 21:23:23,307 INFO     ==> pid: 0, No.30000 iter, val mrr=0.3397906152749864
+2023-04-25 21:25:03,695 INFO     ==> pid: 0, No.32500 iter, val mrr=0.3499283407798309
+2023-04-25 21:26:41,671 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3702037948507542
+2023-04-25 21:26:45,106 INFO     ==> pid: 0, No.35000 iter, test mrr=0.36288869758067915
+2023-04-25 21:28:23,724 INFO     ==> pid: 0, No.37500 iter, val mrr=0.36414859239392056
+2023-04-25 21:29:18,103 INFO     ==> pid: 0, No.20000 iter, val mrr=0.4017896550729074
+2023-04-25 21:30:02,453 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3568871147635961
+2023-04-25 21:31:41,424 INFO     ==> pid: 0, No.42500 iter, val mrr=0.369508031294081
+2023-04-25 21:33:19,886 INFO     ==> pid: 0, No.45000 iter, val mrr=0.37023526945372653
+2023-04-25 21:33:23,280 INFO     ==> pid: 0, No.45000 iter, test mrr=0.3647015753870062
+2023-04-25 21:35:01,782 INFO     ==> pid: 0, No.47500 iter, val mrr=0.3711489841796866
+2023-04-25 21:35:05,397 INFO     ==> pid: 0, No.47500 iter, test mrr=0.3610263594347168
+2023-04-25 21:35:58,950 INFO     ==> pid: 0, No.22500 iter, val mrr=0.42809557853672675
+2023-04-25 21:36:02,538 INFO     ==> pid: 0, No.22500 iter, test mrr=0.41297245806519833
+2023-04-25 21:36:43,316 INFO     ==> pid: 0, No.50000 iter, val mrr=0.37176757931318305
+2023-04-25 21:36:46,817 INFO     ==> pid: 0, No.50000 iter, test mrr=0.36880095154159404
+2023-04-25 21:38:26,074 INFO     ==> pid: 0, No.52500 iter, val mrr=0.3749138600061614
+2023-04-25 21:38:29,704 INFO     ==> pid: 0, No.52500 iter, test mrr=0.372173479114065
+2023-04-25 21:40:07,650 INFO     ==> pid: 0, No.55000 iter, val mrr=0.36939295818704215
+2023-04-25 21:41:46,943 INFO     ==> pid: 0, No.57500 iter, val mrr=0.36718771744260265
+2023-04-25 21:42:42,569 INFO     ==> pid: 0, No.25000 iter, val mrr=0.42623931028406153
+2023-04-25 21:43:26,390 INFO     ==> pid: 0, No.60000 iter, val mrr=0.37131231335962744
+2023-04-25 21:45:06,422 INFO     ==> pid: 0, No.62500 iter, val mrr=0.3978060538144897
+2023-04-25 21:45:09,950 INFO     ==> pid: 0, No.62500 iter, test mrr=0.39367219950038984
+2023-04-25 21:46:48,739 INFO     ==> pid: 0, No.65000 iter, val mrr=0.40106254274487657
+2023-04-25 21:46:52,236 INFO     ==> pid: 0, No.65000 iter, test mrr=0.3946984444497341
+2023-04-25 21:48:32,814 INFO     ==> pid: 0, No.67500 iter, val mrr=0.402981583429523
+2023-04-25 21:48:36,195 INFO     ==> pid: 0, No.67500 iter, test mrr=0.39508315828709195
+2023-04-25 21:49:25,032 INFO     ==> pid: 0, No.27500 iter, val mrr=0.42637634506310595
+2023-04-25 21:50:14,957 INFO     ==> pid: 0, No.70000 iter, val mrr=0.4104192521006505
+2023-04-25 21:50:18,319 INFO     ==> pid: 0, No.70000 iter, test mrr=0.40305017571907054
+2023-04-25 21:51:57,918 INFO     ==> pid: 0, No.72500 iter, val mrr=0.4129322804711408
+2023-04-25 21:52:01,354 INFO     ==> pid: 0, No.72500 iter, test mrr=0.407561278903013
+2023-04-25 21:53:41,665 INFO     ==> pid: 0, No.75000 iter, val mrr=0.4071387406618208
+2023-04-25 21:55:20,569 INFO     ==> pid: 0, No.77500 iter, val mrr=0.41787839994061676
+2023-04-25 21:55:23,928 INFO     ==> pid: 0, No.77500 iter, test mrr=0.4133727141418609
+2023-04-25 21:56:06,325 INFO     ==> pid: 0, No.30000 iter, val mrr=0.42747496043702
+2023-04-25 21:57:03,487 INFO     ==> pid: 0, No.80000 iter, val mrr=0.41798982865303985
+2023-04-25 21:57:06,917 INFO     ==> pid: 0, No.80000 iter, test mrr=0.40863341164370937
+2023-04-25 21:58:46,040 INFO     ==> pid: 0, No.82500 iter, val mrr=0.4175507422823903
+2023-04-25 22:00:25,595 INFO     ==> pid: 0, No.85000 iter, val mrr=0.4186049317959801
+2023-04-25 22:00:29,014 INFO     ==> pid: 0, No.85000 iter, test mrr=0.4146342825070654
+2023-04-25 22:02:07,227 INFO     ==> pid: 0, No.87500 iter, val mrr=0.42571699397811974
+2023-04-25 22:02:10,705 INFO     ==> pid: 0, No.87500 iter, test mrr=0.41564836784911807
+2023-04-25 22:02:47,802 INFO     ==> pid: 0, No.32500 iter, val mrr=0.43320936699466217
+2023-04-25 22:02:51,986 INFO     ==> pid: 0, No.32500 iter, test mrr=0.42121504363219103
+2023-04-25 22:03:50,758 INFO     ==> pid: 0, No.90000 iter, val mrr=0.4188023232500009
+2023-04-25 22:05:29,598 INFO     ==> pid: 0, No.92500 iter, val mrr=0.417602393749058
+2023-04-25 22:07:08,816 INFO     ==> pid: 0, No.95000 iter, val mrr=0.4266154302333217
+2023-04-25 22:07:12,243 INFO     ==> pid: 0, No.95000 iter, test mrr=0.4162222755360074
+2023-04-25 22:08:51,470 INFO     ==> pid: 0, No.97500 iter, val mrr=0.4260789871987826
+2023-04-25 22:09:33,416 INFO     ==> pid: 0, No.35000 iter, val mrr=0.43503013182341466
+2023-04-25 22:09:37,050 INFO     ==> pid: 0, No.35000 iter, test mrr=0.42042128568824566
+2023-04-25 22:10:32,034 INFO     ==> pid: 0, No.100000 iter, val mrr=0.430411362100353
+2023-04-25 22:10:35,412 INFO     ==> pid: 0, No.100000 iter, test mrr=0.42305119985736506
+2023-04-25 22:10:35,526 INFO     ==> val_mrr  list: [0.430411362100353]
+2023-04-25 22:10:35,526 INFO     ==> test_mrr list: [0.42305119985736506]
+2023-04-25 22:10:35,526 INFO     ==> eval times=1, test mrr: mean=0.42305119985736506, std=0.0
+2023-04-25 22:10:35,527 INFO     ==> eval times=1, val  mrr: mean=0.430411362100353, std=0.0
+2023-04-25 22:16:17,288 INFO     ==> pid: 0, No.37500 iter, val mrr=0.4339106742813069
+2023-04-25 22:22:57,494 INFO     ==> pid: 0, No.40000 iter, val mrr=0.4336225980746918
+2023-04-25 22:29:37,897 INFO     ==> pid: 0, No.42500 iter, val mrr=0.43408669854650933
+2023-04-25 22:36:20,749 INFO     ==> pid: 0, No.45000 iter, val mrr=0.43601458421528255
+2023-04-25 22:36:24,446 INFO     ==> pid: 0, No.45000 iter, test mrr=0.42355053473397847
+2023-04-25 22:43:07,838 INFO     ==> pid: 0, No.47500 iter, val mrr=0.4353460194099963
+2023-04-25 22:49:50,813 INFO     ==> pid: 0, No.50000 iter, val mrr=0.43660075255568526
+2023-04-25 22:49:54,526 INFO     ==> pid: 0, No.50000 iter, test mrr=0.4240291043734426
+2023-04-25 22:56:37,230 INFO     ==> pid: 0, No.52500 iter, val mrr=0.4351521413834175
+2023-04-25 23:03:21,601 INFO     ==> pid: 0, No.55000 iter, val mrr=0.4357470315121998
+2023-04-25 23:10:06,946 INFO     ==> pid: 0, No.57500 iter, val mrr=0.43636804926547024
+2023-04-25 23:16:50,494 INFO     ==> pid: 0, No.60000 iter, val mrr=0.4361667440732479
+2023-04-25 23:23:33,639 INFO     ==> pid: 0, No.62500 iter, val mrr=0.436800282000281
+2023-04-25 23:23:37,142 INFO     ==> pid: 0, No.62500 iter, test mrr=0.42486390048561895
+2023-04-25 23:30:20,148 INFO     ==> pid: 0, No.65000 iter, val mrr=0.43711176082879716
+2023-04-25 23:30:23,875 INFO     ==> pid: 0, No.65000 iter, test mrr=0.42534883923910805
+2023-04-25 23:37:08,254 INFO     ==> pid: 0, No.67500 iter, val mrr=0.4368662280815256
+2023-04-25 23:43:52,551 INFO     ==> pid: 0, No.70000 iter, val mrr=0.4369253742487862
+2023-04-25 23:50:35,173 INFO     ==> pid: 0, No.72500 iter, val mrr=0.43776539947495974
+2023-04-25 23:50:38,866 INFO     ==> pid: 0, No.72500 iter, test mrr=0.4245666052457093
+2023-04-25 23:57:23,399 INFO     ==> pid: 0, No.75000 iter, val mrr=0.4377596039151817
+2023-04-26 00:04:06,959 INFO     ==> pid: 0, No.77500 iter, val mrr=0.43780810369097084
+2023-04-26 00:04:10,715 INFO     ==> pid: 0, No.77500 iter, test mrr=0.425369627958754
+2023-04-26 00:10:56,373 INFO     ==> pid: 0, No.80000 iter, val mrr=0.4368428464194282
+2023-04-26 00:17:42,366 INFO     ==> pid: 0, No.82500 iter, val mrr=0.4381438395223501
+2023-04-26 00:17:46,197 INFO     ==> pid: 0, No.82500 iter, test mrr=0.425152951564936
+2023-04-26 00:24:31,928 INFO     ==> pid: 0, No.85000 iter, val mrr=0.43746694409998926
+2023-04-26 00:31:17,428 INFO     ==> pid: 0, No.87500 iter, val mrr=0.4364951325965701
+2023-04-26 00:38:04,083 INFO     ==> pid: 0, No.90000 iter, val mrr=0.4371716910125986
+2023-04-26 00:44:49,309 INFO     ==> pid: 0, No.92500 iter, val mrr=0.43751006989679025
+2023-04-26 00:51:35,166 INFO     ==> pid: 0, No.95000 iter, val mrr=0.4378130952484904
+2023-04-26 00:58:24,183 INFO     ==> pid: 0, No.97500 iter, val mrr=0.4374913539243025
+2023-04-26 01:05:13,201 INFO     ==> pid: 0, No.100000 iter, val mrr=0.4377690710678829
+2023-04-26 01:05:13,432 INFO     ==> val_mrr  list: [0.4381438395223501]
+2023-04-26 01:05:13,432 INFO     ==> test_mrr list: [0.425152951564936]
+2023-04-26 01:05:13,433 INFO     ==> eval times=1, test mrr: mean=0.425152951564936, std=0.0
+2023-04-26 01:05:13,433 INFO     ==> eval times=1, val  mrr: mean=0.4381438395223501, std=0.0
+2023-04-27 19:44:39,659 INFO     preparing training data ...
+2023-04-27 19:45:00,256 INFO     preparing training data ...
+2023-04-27 19:45:31,605 INFO     finish preparing
+2023-04-27 19:45:31,605 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adagrad', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.0, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-27 19:45:31,606 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adagrad', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.0, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-27 19:45:31,643 INFO     ==> pid: 0, num_parameters for TComplEx: 2544962
+2023-04-27 19:45:50,818 INFO     ==> pid: 0, No.1 iter, val mrr=0.005882346868789224
+2023-04-27 19:46:06,372 INFO     ==> pid: 0, No.1 iter, test mrr=0.005208490229812638
+2023-04-27 19:48:04,631 INFO     ==> pid: 0, No.750 iter, val mrr=0.509502603789746
+2023-04-27 19:48:21,574 INFO     ==> pid: 0, No.750 iter, test mrr=0.494692256894915
+2023-04-28 20:53:10,737 INFO     preparing training data ...
+2023-04-28 20:53:40,060 INFO     finish preparing
+2023-04-28 20:53:56,995 INFO     preparing training data ...
+2023-04-28 20:54:26,180 INFO     preparing training data ...
+2023-04-28 20:54:55,836 INFO     finish preparing
+2023-04-28 20:54:55,837 INFO     Evaluation params for TComplEx: {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.0, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01}
+2023-04-28 20:54:55,837 INFO     ==> pid: 0, proparams_dict: {'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'optimizer': 'adam', 'initializer': 'uniform', 'shareInverseRelation': True, 'batch_size': 1000, 'dim': 320, 'lr': 0.1, 'regu_weight': 0.01, 'advs': 0, 'dropoutRate': 0.0, 'gamma': 120, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': '1VsAll', 'embedding_range': 0.01} 
+
+2023-04-28 20:54:55,886 INFO     ==> pid: 0, num_parameters for TComplEx: 2544962
+2023-04-28 20:55:01,689 INFO     ==> pid: 0, No.1 iter, val mrr=0.006822623717886676
+2023-04-28 20:55:04,953 INFO     ==> pid: 0, No.1 iter, test mrr=0.0063309017293143675
+2023-04-28 20:55:28,114 INFO     ==> pid: 0, No.750 iter, val mrr=0.1885519411587883
+2023-04-28 20:55:31,134 INFO     ==> pid: 0, No.750 iter, test mrr=0.18381598924897957

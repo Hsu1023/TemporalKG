@@ -1,0 +1,76 @@
+2023-04-25 17:10:27,026 INFO     preparing training data ...
+2023-04-25 17:10:42,332 INFO     preparing training data ...
+2023-04-25 17:10:53,691 INFO     finish preparing
+2023-04-25 17:10:53,691 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 17:10:53,692 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 17:10:53,859 INFO     ==> pid: 0, num_parameters for ComplEx: 15906002
+2023-04-25 17:11:00,133 INFO     ==> pid: 0, No.1 iter, val mrr=0.0016812963006740582
+2023-04-25 17:11:03,502 INFO     ==> pid: 0, No.1 iter, test mrr=0.001701781555876991
+2023-04-25 17:11:11,166 INFO     finish preparing
+2023-04-25 17:11:11,167 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 17:11:11,167 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 17:11:11,305 INFO     ==> pid: 0, num_parameters for ComplEx: 15906002
+2023-04-25 17:11:21,488 INFO     ==> pid: 0, No.1 iter, val mrr=0.0014778437429755396
+2023-04-25 17:11:26,931 INFO     ==> pid: 0, No.1 iter, test mrr=0.0015764574440956113
+2023-04-25 17:14:02,661 INFO     ==> pid: 0, No.2500 iter, val mrr=0.4590600903665717
+2023-04-25 17:14:08,615 INFO     ==> pid: 0, No.2500 iter, test mrr=0.4405380723445845
+2023-04-25 17:14:25,148 INFO     ==> pid: 0, No.2500 iter, val mrr=0.458104915966815
+2023-04-25 17:14:31,994 INFO     ==> pid: 0, No.2500 iter, test mrr=0.4400088345904409
+2023-04-25 17:17:07,675 INFO     ==> pid: 0, No.5000 iter, val mrr=0.4662960567391274
+2023-04-25 17:17:14,269 INFO     ==> pid: 0, No.5000 iter, test mrr=0.4455573958743339
+2023-04-25 17:17:32,627 INFO     ==> pid: 0, No.5000 iter, val mrr=0.46481565357973625
+2023-04-25 17:17:38,635 INFO     ==> pid: 0, No.5000 iter, test mrr=0.4472378271324968
+2023-04-25 17:20:15,047 INFO     ==> pid: 0, No.7500 iter, val mrr=0.46660292128501096
+2023-04-25 17:20:21,956 INFO     ==> pid: 0, No.7500 iter, test mrr=0.4462204396525131
+2023-04-25 17:20:46,072 INFO     ==> pid: 0, No.7500 iter, val mrr=0.4671873324047102
+2023-04-25 17:20:52,942 INFO     ==> pid: 0, No.7500 iter, test mrr=0.44849859207483456
+2023-04-25 17:31:00,685 INFO     preparing training data ...
+2023-04-25 17:31:07,320 INFO     preparing training data ...
+2023-04-25 17:31:39,206 INFO     finish preparing
+2023-04-25 17:31:39,206 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-25 17:31:39,206 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-25 17:31:39,388 INFO     ==> pid: 0, num_parameters for ComplEx: 15906002
+2023-04-25 17:31:46,399 INFO     ==> pid: 0, No.1 iter, val mrr=0.0015040635615990918
+2023-04-25 17:31:51,511 INFO     ==> pid: 0, No.1 iter, test mrr=0.0014223343355215692
+2023-04-25 17:34:35,366 INFO     ==> pid: 0, No.2500 iter, val mrr=0.4575430159427062
+2023-04-25 17:34:40,208 INFO     ==> pid: 0, No.2500 iter, test mrr=0.4392140399684461
+2023-04-25 17:37:23,851 INFO     ==> pid: 0, No.5000 iter, val mrr=0.46446105365583545
+2023-04-25 17:37:29,903 INFO     ==> pid: 0, No.5000 iter, test mrr=0.4459140293548013
+2023-04-25 17:40:14,188 INFO     ==> pid: 0, No.7500 iter, val mrr=0.46544748292374943
+2023-04-25 17:40:19,694 INFO     ==> pid: 0, No.7500 iter, test mrr=0.44632229321347566
+2023-04-25 17:43:47,338 INFO     ==> pid: 0, No.10000 iter, val mrr=0.4654208291967958
+2023-04-25 17:48:35,260 INFO     ==> pid: 0, No.12500 iter, val mrr=0.46404603026991115
+2023-04-25 17:53:20,987 INFO     ==> pid: 0, No.15000 iter, val mrr=0.46242939130283195
+2023-04-25 17:58:07,568 INFO     ==> pid: 0, No.17500 iter, val mrr=0.4618939868352567
+2023-04-25 18:02:55,434 INFO     ==> pid: 0, No.20000 iter, val mrr=0.4618510763101881
+2023-04-25 18:07:42,892 INFO     ==> pid: 0, No.22500 iter, val mrr=0.46092773757835404
+2023-04-25 18:12:27,954 INFO     ==> pid: 0, No.25000 iter, val mrr=0.4608832461120451
+2023-04-25 18:17:15,144 INFO     ==> pid: 0, No.27500 iter, val mrr=0.4615918734614286
+2023-04-25 18:21:59,256 INFO     ==> pid: 0, No.30000 iter, val mrr=0.4607277541794801
+2023-04-25 18:26:46,492 INFO     ==> pid: 0, No.32500 iter, val mrr=0.4606721250976899
+2023-04-25 18:31:32,705 INFO     ==> pid: 0, No.35000 iter, val mrr=0.45982030542414865
+2023-04-25 18:35:55,697 INFO     ==> pid: 0, No.37500 iter, val mrr=0.4600656491772633
+2023-04-28 20:48:39,251 INFO     preparing training data ...
+2023-04-28 20:49:10,586 INFO     finish preparing
+2023-04-28 20:49:10,586 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-28 20:49:10,587 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-28 20:50:05,088 INFO     preparing training data ...
+2023-04-28 20:50:36,712 INFO     finish preparing
+2023-04-28 20:50:36,712 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-28 20:50:36,712 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-28 20:50:36,901 INFO     ==> pid: 0, num_parameters for ComplEx: 15176002
+2023-04-28 20:52:54,468 INFO     preparing training data ...
+2023-04-28 20:53:24,283 INFO     finish preparing
+2023-04-28 20:53:24,283 INFO     Evaluation params for ComplEx: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01}
+2023-04-28 20:53:24,283 INFO     ==> pid: 0, proparams_dict: {'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_mean', 'optimizer': 'adam', 'initializer': 'xavier_uniform', 'shareInverseRelation': False, 'batch_size': 1024, 'dim': 2000, 'lr': 0.0006085705049997063, 'regu_weight': 0.001219459833168948, 'advs': 0, 'dropoutRate': 0.2824915454386786, 'gamma': 2.291224978169301, 'filter_falseNegative': True, 'label_smooth': 0.0, 'training_mode': 'negativeSampling', 'embedding_range': 0.01} 
+
+2023-04-28 20:53:24,437 INFO     ==> pid: 0, num_parameters for ComplEx: 15176002
+2023-04-28 20:53:30,782 INFO     ==> pid: 0, No.1 iter, val mrr=0.001415828088231114
+2023-04-28 20:53:33,941 INFO     ==> pid: 0, No.1 iter, test mrr=0.001333288504372267
+2023-04-28 20:54:07,368 INFO     ==> pid: 0, No.750 iter, val mrr=0.39421306760559827
+2023-04-28 20:54:10,485 INFO     ==> pid: 0, No.750 iter, test mrr=0.3821778868261428

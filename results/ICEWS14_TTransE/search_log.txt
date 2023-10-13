@@ -1,0 +1,797 @@
+2023-04-28 11:53:45,253 INFO     preparing training data ...
+2023-04-28 11:54:14,926 INFO     finish preparing
+2023-04-28 11:54:14,927 INFO     trials:1/200
+2023-04-28 11:54:50,248 INFO     preparing training data ...
+2023-04-28 11:55:19,981 INFO     finish preparing
+2023-04-28 11:55:19,981 INFO     trials:1/200
+2023-04-28 11:55:21,720 INFO     ==> pid: 0, proparams_dict: {'batch_size': 512, 'dim': 200, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_mean', 'initializer': 'xavier_normal', 'lr': 0.00023440868578379555, 'regu_weight': 0.00635237897999368, 'advs': 0, 'dropoutRate': 0.15392465682695272, 'gamma': 10.315290088283412, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 11:55:21,751 INFO     ==> pid: 0, num_parameters for TTransE: 1918602
+2023-04-28 11:55:27,915 INFO     ==> pid: 0, No.1 iter, val mrr=0.0014490922116235884
+2023-04-28 11:55:30,612 INFO     ==> pid: 0, No.1 iter, test mrr=0.0013940929923101325
+2023-04-28 11:56:41,037 INFO     ==> pid: 0, No.1000 iter, val mrr=0.16252634814401876
+2023-04-28 11:56:43,931 INFO     ==> pid: 0, No.1000 iter, test mrr=0.16248223834512568
+2023-04-28 11:57:54,740 INFO     ==> pid: 0, No.2000 iter, val mrr=0.20512036637688438
+2023-04-28 11:57:57,679 INFO     ==> pid: 0, No.2000 iter, test mrr=0.2006078838107614
+2023-04-28 11:59:07,836 INFO     ==> pid: 0, No.3000 iter, val mrr=0.2298721965398093
+2023-04-28 11:59:10,578 INFO     ==> pid: 0, No.3000 iter, test mrr=0.22351671029892578
+2023-04-28 12:00:21,068 INFO     ==> pid: 0, No.4000 iter, val mrr=0.22911429944943032
+2023-04-28 12:01:31,630 INFO     ==> pid: 0, No.5000 iter, val mrr=0.22673928921108724
+2023-04-28 12:02:42,638 INFO     ==> pid: 0, No.6000 iter, val mrr=0.22433163502883824
+2023-04-28 12:03:52,762 INFO     ==> pid: 0, No.7000 iter, val mrr=0.2245295339342575
+2023-04-28 12:05:04,173 INFO     ==> pid: 0, No.8000 iter, val mrr=0.22344928593813498
+2023-04-28 12:05:04,173 INFO     ==> pid: 0, early stopping at No.8000 step
+2023-04-28 12:05:04,354 INFO     trials:2/200
+2023-04-28 12:05:06,217 INFO     ==> pid: 0, proparams_dict: {'batch_size': 256, 'dim': 2000, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_mean', 'initializer': 'xavier_normal', 'lr': 0.0010382271938852473, 'regu_weight': 4.941944911998361e-06, 'advs': 0, 'dropoutRate': 0.2698932322285989, 'gamma': 23.5000094930166, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:05:06,659 INFO     ==> pid: 0, num_parameters for TTransE: 47986002
+2023-04-28 12:05:07,102 WARNING  out of memory in training step
+2023-04-28 12:05:07,274 INFO     trials:3/200
+2023-04-28 12:05:09,139 INFO     ==> pid: 0, proparams_dict: {'batch_size': 512, 'dim': 2000, 'n_neg': 2048, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'normal', 'lr': 0.005778356068172123, 'regu_weight': 3.4522520803938125e-06, 'advs': 0, 'dropoutRate': 0.27813974531120433, 'gamma': 16.38047893692856, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:05:09,570 INFO     ==> pid: 0, num_parameters for TTransE: 47986002
+2023-04-28 12:05:10,159 WARNING  out of memory in training step
+2023-04-28 12:05:10,350 INFO     trials:4/200
+2023-04-28 12:05:12,149 INFO     ==> pid: 0, proparams_dict: {'batch_size': 128, 'dim': 1000, 'n_neg': 128, 'regularizer': 'DURA', 'loss_function': 'BCE_mean', 'initializer': 'normal', 'lr': 0.0016175480855793328, 'regu_weight': 1.5038118405372013e-06, 'advs': 0, 'dropoutRate': 0.25699624024043816, 'gamma': 18.520595055434708, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:05:12,290 INFO     ==> pid: 0, num_parameters for TTransE: 15993002
+2023-04-28 12:05:16,861 INFO     ==> pid: 0, No.1 iter, val mrr=0.006132659616554598
+2023-04-28 12:05:20,901 INFO     ==> pid: 0, No.1 iter, test mrr=0.005693509760652702
+2023-04-28 12:05:42,377 INFO     ==> pid: 0, No.1000 iter, val mrr=0.14310253899815187
+2023-04-28 12:05:46,677 INFO     ==> pid: 0, No.1000 iter, test mrr=0.13995841732770908
+2023-04-28 12:06:08,365 INFO     ==> pid: 0, No.2000 iter, val mrr=0.14958321940865982
+2023-04-28 12:06:12,610 INFO     ==> pid: 0, No.2000 iter, test mrr=0.14613182000091118
+2023-04-28 12:06:33,911 INFO     ==> pid: 0, No.3000 iter, val mrr=0.15222785690962015
+2023-04-28 12:06:38,289 INFO     ==> pid: 0, No.3000 iter, test mrr=0.14878701428688962
+2023-04-28 12:07:00,791 INFO     ==> pid: 0, No.4000 iter, val mrr=0.15061756907922877
+2023-04-28 12:07:24,066 INFO     ==> pid: 0, No.5000 iter, val mrr=0.14961051284569976
+2023-04-28 12:07:46,880 INFO     ==> pid: 0, No.6000 iter, val mrr=0.1541315846817144
+2023-04-28 12:07:51,094 INFO     ==> pid: 0, No.6000 iter, test mrr=0.1501679686261327
+2023-04-28 12:08:13,663 INFO     ==> pid: 0, No.7000 iter, val mrr=0.15353971876250885
+2023-04-28 12:08:36,184 INFO     ==> pid: 0, No.8000 iter, val mrr=0.15340239232312655
+2023-04-28 12:08:58,541 INFO     ==> pid: 0, No.9000 iter, val mrr=0.14637832416766486
+2023-04-28 12:09:21,262 INFO     ==> pid: 0, No.10000 iter, val mrr=0.19848161814324022
+2023-04-28 12:09:25,481 INFO     ==> pid: 0, No.10000 iter, test mrr=0.19266947489306852
+2023-04-28 12:09:47,910 INFO     ==> pid: 0, No.11000 iter, val mrr=0.19804907598489171
+2023-04-28 12:10:10,836 INFO     ==> pid: 0, No.12000 iter, val mrr=0.19724961419225004
+2023-04-28 12:10:33,666 INFO     ==> pid: 0, No.13000 iter, val mrr=0.19732587056766018
+2023-04-28 12:10:55,980 INFO     ==> pid: 0, No.14000 iter, val mrr=0.21140439653200638
+2023-04-28 12:11:00,318 INFO     ==> pid: 0, No.14000 iter, test mrr=0.20401411574568107
+2023-04-28 12:11:22,920 INFO     ==> pid: 0, No.15000 iter, val mrr=0.20875438794086418
+2023-04-28 12:11:45,616 INFO     ==> pid: 0, No.16000 iter, val mrr=0.20638562723821965
+2023-04-28 12:12:07,824 INFO     ==> pid: 0, No.17000 iter, val mrr=0.2056932843850812
+2023-04-28 12:12:30,579 INFO     ==> pid: 0, No.18000 iter, val mrr=0.2102889479736772
+2023-04-28 12:12:52,970 INFO     ==> pid: 0, No.19000 iter, val mrr=0.20818180417425866
+2023-04-28 12:12:52,971 INFO     ==> pid: 0, early stopping at No.19000 step
+2023-04-28 12:12:53,359 INFO     trials:5/200
+2023-04-28 12:12:59,124 INFO     ==> pid: 0, proparams_dict: {'batch_size': 512, 'dim': 500, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.0004873787614840296, 'regu_weight': 0.004884630309896225, 'advs': 0, 'dropoutRate': 0.023446980701185914, 'gamma': 5.113160611496735, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:12:59,172 INFO     ==> pid: 0, num_parameters for TTransE: 5996502
+2023-04-28 12:12:59,630 WARNING  out of memory in training step
+2023-04-28 12:13:00,020 INFO     trials:6/200
+2023-04-28 12:13:05,820 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 100, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_mean', 'initializer': 'xavier_normal', 'lr': 0.0006364901688770366, 'regu_weight': 0.0002015826731490783, 'advs': 0, 'dropoutRate': 0.004533628341319262, 'gamma': 10.382040959369824, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:13:05,828 INFO     ==> pid: 0, num_parameters for TTransE: 879302
+2023-04-28 12:13:09,099 INFO     ==> pid: 0, No.1 iter, val mrr=0.0012574712102558113
+2023-04-28 12:13:11,625 INFO     ==> pid: 0, No.1 iter, test mrr=0.0011727279472605672
+2023-04-28 12:14:28,666 INFO     ==> pid: 0, No.1000 iter, val mrr=0.20948578902904305
+2023-04-28 12:14:31,188 INFO     ==> pid: 0, No.1000 iter, test mrr=0.20631654888078352
+2023-04-28 12:15:49,198 INFO     ==> pid: 0, No.2000 iter, val mrr=0.242247383115112
+2023-04-28 12:15:51,814 INFO     ==> pid: 0, No.2000 iter, test mrr=0.2339336404302862
+2023-04-28 12:17:09,159 INFO     ==> pid: 0, No.3000 iter, val mrr=0.23811454093349263
+2023-04-28 12:18:27,354 INFO     ==> pid: 0, No.4000 iter, val mrr=0.2361306415239547
+2023-04-28 12:19:41,513 INFO     ==> pid: 0, No.5000 iter, val mrr=0.23548434780934854
+2023-04-28 12:20:53,433 INFO     ==> pid: 0, No.6000 iter, val mrr=0.2369536784166531
+2023-04-28 12:22:05,162 INFO     ==> pid: 0, No.7000 iter, val mrr=0.23739018061815556
+2023-04-28 12:22:05,162 INFO     ==> pid: 0, early stopping at No.7000 step
+2023-04-28 12:22:05,553 INFO     trials:7/200
+2023-04-28 12:22:11,440 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 100, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.008632776553619282, 'regu_weight': 0.00020444848655249464, 'advs': 0, 'dropoutRate': 0.04197700245968221, 'gamma': 21.755941235550008, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 12:22:11,457 INFO     ==> pid: 0, num_parameters for TTransE: 879302
+2023-04-28 12:22:14,545 INFO     ==> pid: 0, No.1 iter, val mrr=0.0017095010947700893
+2023-04-28 12:22:17,406 INFO     ==> pid: 0, No.1 iter, test mrr=0.0017108653210477186
+2023-04-28 12:23:28,050 INFO     ==> pid: 0, No.1000 iter, val mrr=0.0038072273117968265
+2023-04-28 12:23:30,563 INFO     ==> pid: 0, No.1000 iter, test mrr=0.0037030308054802658
+2023-04-28 12:24:41,065 INFO     ==> pid: 0, No.2000 iter, val mrr=0.005800767117185465
+2023-04-28 12:24:43,586 INFO     ==> pid: 0, No.2000 iter, test mrr=0.0054269052754393815
+2023-04-28 12:25:54,416 INFO     ==> pid: 0, No.3000 iter, val mrr=0.014720376498444019
+2023-04-28 12:25:56,877 INFO     ==> pid: 0, No.3000 iter, test mrr=0.013789503792138115
+2023-04-28 12:27:07,277 INFO     ==> pid: 0, No.4000 iter, val mrr=0.054104482828022105
+2023-04-28 12:27:09,855 INFO     ==> pid: 0, No.4000 iter, test mrr=0.05276840417071035
+2023-04-28 12:28:20,539 INFO     ==> pid: 0, No.5000 iter, val mrr=0.13057163766352317
+2023-04-28 12:28:23,004 INFO     ==> pid: 0, No.5000 iter, test mrr=0.12822905569292942
+2023-04-28 12:29:33,328 INFO     ==> pid: 0, No.6000 iter, val mrr=0.2065043885893455
+2023-04-28 12:29:35,762 INFO     ==> pid: 0, No.6000 iter, test mrr=0.20232876271839775
+2023-04-28 12:30:47,008 INFO     ==> pid: 0, No.7000 iter, val mrr=0.2650922914246185
+2023-04-28 12:30:49,557 INFO     ==> pid: 0, No.7000 iter, test mrr=0.26051560464997636
+2023-04-28 12:32:00,123 INFO     ==> pid: 0, No.8000 iter, val mrr=0.30596056795867194
+2023-04-28 12:32:02,570 INFO     ==> pid: 0, No.8000 iter, test mrr=0.2998701355520681
+2023-04-28 12:33:13,509 INFO     ==> pid: 0, No.9000 iter, val mrr=0.33181116629745916
+2023-04-28 12:33:16,000 INFO     ==> pid: 0, No.9000 iter, test mrr=0.3226947015788082
+2023-04-28 12:34:26,757 INFO     ==> pid: 0, No.10000 iter, val mrr=0.3466325514821672
+2023-04-28 12:34:29,202 INFO     ==> pid: 0, No.10000 iter, test mrr=0.3366133017371096
+2023-04-28 12:35:40,037 INFO     ==> pid: 0, No.11000 iter, val mrr=0.35305474071761833
+2023-04-28 12:35:42,402 INFO     ==> pid: 0, No.11000 iter, test mrr=0.3429210778258553
+2023-04-28 12:36:52,784 INFO     ==> pid: 0, No.12000 iter, val mrr=0.3569546719217643
+2023-04-28 12:36:55,368 INFO     ==> pid: 0, No.12000 iter, test mrr=0.34556245279392195
+2023-04-28 12:38:06,227 INFO     ==> pid: 0, No.13000 iter, val mrr=0.35898786222103474
+2023-04-28 12:38:08,676 INFO     ==> pid: 0, No.13000 iter, test mrr=0.34639333027494507
+2023-04-28 12:39:19,067 INFO     ==> pid: 0, No.14000 iter, val mrr=0.3580888639366064
+2023-04-28 12:40:29,401 INFO     ==> pid: 0, No.15000 iter, val mrr=0.358266170964125
+2023-04-28 12:41:39,764 INFO     ==> pid: 0, No.16000 iter, val mrr=0.35775200716894834
+2023-04-28 12:42:50,217 INFO     ==> pid: 0, No.17000 iter, val mrr=0.3739415357043579
+2023-04-28 12:42:52,726 INFO     ==> pid: 0, No.17000 iter, test mrr=0.36110238610385814
+2023-04-28 12:44:03,690 INFO     ==> pid: 0, No.18000 iter, val mrr=0.37313736223332317
+2023-04-28 12:45:14,248 INFO     ==> pid: 0, No.19000 iter, val mrr=0.37419167287512123
+2023-04-28 12:45:16,761 INFO     ==> pid: 0, No.19000 iter, test mrr=0.3605142107933139
+2023-04-28 12:46:27,757 INFO     ==> pid: 0, No.20000 iter, val mrr=0.3732319745231661
+2023-04-28 12:47:38,229 INFO     ==> pid: 0, No.21000 iter, val mrr=0.37359799991452003
+2023-04-28 12:48:48,630 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3736808791335188
+2023-04-28 12:49:59,273 INFO     ==> pid: 0, No.23000 iter, val mrr=0.38038868959471
+2023-04-28 12:50:01,770 INFO     ==> pid: 0, No.23000 iter, test mrr=0.3663123583351408
+2023-04-28 12:51:12,772 INFO     ==> pid: 0, No.24000 iter, val mrr=0.38097959016978394
+2023-04-28 12:51:15,315 INFO     ==> pid: 0, No.24000 iter, test mrr=0.3656937402860645
+2023-04-28 12:52:26,045 INFO     ==> pid: 0, No.25000 iter, val mrr=0.3812798671901426
+2023-04-28 12:52:28,550 INFO     ==> pid: 0, No.25000 iter, test mrr=0.36699344672729783
+2023-04-28 12:53:39,056 INFO     ==> pid: 0, No.26000 iter, val mrr=0.3803859011714369
+2023-04-28 12:54:50,161 INFO     ==> pid: 0, No.27000 iter, val mrr=0.3796832100925464
+2023-04-28 12:56:00,603 INFO     ==> pid: 0, No.28000 iter, val mrr=0.38031993833140143
+2023-04-28 12:57:10,963 INFO     ==> pid: 0, No.29000 iter, val mrr=0.3821501056552945
+2023-04-28 12:57:13,381 INFO     ==> pid: 0, No.29000 iter, test mrr=0.36827429132556627
+2023-04-28 12:58:24,363 INFO     ==> pid: 0, No.30000 iter, val mrr=0.3821140500059465
+2023-04-28 12:59:35,660 INFO     ==> pid: 0, No.31000 iter, val mrr=0.3825146215967887
+2023-04-28 12:59:38,115 INFO     ==> pid: 0, No.31000 iter, test mrr=0.36817663054452626
+2023-04-28 13:00:48,900 INFO     ==> pid: 0, No.32000 iter, val mrr=0.38162425615448864
+2023-04-28 13:01:59,633 INFO     ==> pid: 0, No.33000 iter, val mrr=0.3824433889496456
+2023-04-28 13:03:10,880 INFO     ==> pid: 0, No.34000 iter, val mrr=0.3822870265846427
+2023-04-28 13:04:22,012 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3830994723997669
+2023-04-28 13:04:24,497 INFO     ==> pid: 0, No.35000 iter, test mrr=0.3687358908010523
+2023-04-28 13:05:35,752 INFO     ==> pid: 0, No.36000 iter, val mrr=0.38334913050578395
+2023-04-28 13:05:38,244 INFO     ==> pid: 0, No.36000 iter, test mrr=0.3685029280243473
+2023-04-28 13:06:49,256 INFO     ==> pid: 0, No.37000 iter, val mrr=0.38294262009438285
+2023-04-28 13:08:03,169 INFO     ==> pid: 0, No.38000 iter, val mrr=0.3829600800271557
+2023-04-28 13:09:20,718 INFO     ==> pid: 0, No.39000 iter, val mrr=0.382963826860432
+2023-04-28 13:10:37,910 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3836032147527352
+2023-04-28 13:10:40,724 INFO     ==> pid: 0, No.40000 iter, test mrr=0.3688116748138582
+2023-04-28 13:11:57,988 INFO     ==> pid: 0, No.41000 iter, val mrr=0.38337909219298766
+2023-04-28 13:13:15,683 INFO     ==> pid: 0, No.42000 iter, val mrr=0.38364973398409685
+2023-04-28 13:13:18,664 INFO     ==> pid: 0, No.42000 iter, test mrr=0.36869157045676765
+2023-04-28 13:14:35,748 INFO     ==> pid: 0, No.43000 iter, val mrr=0.38303381601527947
+2023-04-28 13:15:53,607 INFO     ==> pid: 0, No.44000 iter, val mrr=0.3833208494537099
+2023-04-28 13:17:10,822 INFO     ==> pid: 0, No.45000 iter, val mrr=0.3832764218884434
+2023-04-28 13:18:26,881 INFO     ==> pid: 0, No.46000 iter, val mrr=0.3835448205660766
+2023-04-28 13:19:43,330 INFO     ==> pid: 0, No.47000 iter, val mrr=0.38345397598703324
+2023-04-28 13:19:43,330 INFO     ==> pid: 0, early stopping at No.47000 step
+2023-04-28 13:19:43,734 INFO     trials:8/200
+2023-04-28 13:19:49,538 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 2000, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.006723427095055701, 'regu_weight': 0.00048475623082454674, 'advs': 0, 'dropoutRate': 0.09206813277035121, 'gamma': 22.733651491971013, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 13:19:49,966 INFO     ==> pid: 0, num_parameters for TTransE: 47986002
+2023-04-28 13:19:50,397 WARNING  out of memory in training step
+2023-04-28 13:19:50,772 INFO     trials:9/200
+2023-04-28 13:19:56,753 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.003930490039134467, 'regu_weight': 0.001677697278368161, 'advs': 0, 'dropoutRate': 0.04599246027135747, 'gamma': 23.24125309599283, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 13:19:56,774 INFO     ==> pid: 0, num_parameters for TTransE: 1918602
+2023-04-28 13:20:00,110 INFO     ==> pid: 0, No.1 iter, val mrr=0.0017108180212385333
+2023-04-28 13:20:02,877 INFO     ==> pid: 0, No.1 iter, test mrr=0.001731906933699634
+2023-04-28 13:22:04,370 INFO     ==> pid: 0, No.1000 iter, val mrr=0.00372623117186151
+2023-04-28 13:22:06,994 INFO     ==> pid: 0, No.1000 iter, test mrr=0.0033215132849883497
+2023-04-28 13:24:07,393 INFO     ==> pid: 0, No.2000 iter, val mrr=0.005528435976818051
+2023-04-28 13:24:10,011 INFO     ==> pid: 0, No.2000 iter, test mrr=0.004996626194976629
+2023-04-28 13:26:10,591 INFO     ==> pid: 0, No.3000 iter, val mrr=0.01525575886121351
+2023-04-28 13:26:13,313 INFO     ==> pid: 0, No.3000 iter, test mrr=0.014086771161467457
+2023-04-28 13:28:13,268 INFO     ==> pid: 0, No.4000 iter, val mrr=0.056032928357948396
+2023-04-28 13:28:16,033 INFO     ==> pid: 0, No.4000 iter, test mrr=0.05361513902304367
+2023-04-28 13:30:12,422 INFO     ==> pid: 0, No.5000 iter, val mrr=0.12800495382533997
+2023-04-28 13:30:15,338 INFO     ==> pid: 0, No.5000 iter, test mrr=0.12635530134574963
+2023-04-28 13:32:11,380 INFO     ==> pid: 0, No.6000 iter, val mrr=0.19883507691498434
+2023-04-28 13:32:14,239 INFO     ==> pid: 0, No.6000 iter, test mrr=0.19645629945121582
+2023-04-28 13:34:10,318 INFO     ==> pid: 0, No.7000 iter, val mrr=0.2570116944831129
+2023-04-28 13:34:13,188 INFO     ==> pid: 0, No.7000 iter, test mrr=0.2514885072006925
+2023-04-28 13:36:09,301 INFO     ==> pid: 0, No.8000 iter, val mrr=0.3014716752246185
+2023-04-28 13:36:12,110 INFO     ==> pid: 0, No.8000 iter, test mrr=0.29355799331896093
+2023-04-28 13:38:08,845 INFO     ==> pid: 0, No.9000 iter, val mrr=0.32966129317780835
+2023-04-28 13:38:12,049 INFO     ==> pid: 0, No.9000 iter, test mrr=0.31971909757882166
+2023-04-28 13:40:07,926 INFO     ==> pid: 0, No.10000 iter, val mrr=0.34878836331894203
+2023-04-28 13:40:10,659 INFO     ==> pid: 0, No.10000 iter, test mrr=0.33737448204166254
+2023-04-28 13:42:06,809 INFO     ==> pid: 0, No.11000 iter, val mrr=0.35948421220235055
+2023-04-28 13:42:09,384 INFO     ==> pid: 0, No.11000 iter, test mrr=0.34723836609591024
+2023-04-28 13:44:06,202 INFO     ==> pid: 0, No.12000 iter, val mrr=0.36547374319183656
+2023-04-28 13:44:08,851 INFO     ==> pid: 0, No.12000 iter, test mrr=0.35191764227451633
+2023-04-28 13:46:05,192 INFO     ==> pid: 0, No.13000 iter, val mrr=0.3683888959468339
+2023-04-28 13:46:08,115 INFO     ==> pid: 0, No.13000 iter, test mrr=0.3545071363949561
+2023-04-28 13:48:07,755 INFO     ==> pid: 0, No.14000 iter, val mrr=0.3688678911726583
+2023-04-28 13:48:10,677 INFO     ==> pid: 0, No.14000 iter, test mrr=0.35484248176477207
+2023-04-28 13:50:11,137 INFO     ==> pid: 0, No.15000 iter, val mrr=0.3678847332167527
+2023-04-28 13:52:14,192 INFO     ==> pid: 0, No.16000 iter, val mrr=0.3678760068910345
+2023-04-28 13:54:17,807 INFO     ==> pid: 0, No.17000 iter, val mrr=0.36814960474988623
+2023-04-28 13:56:20,908 INFO     ==> pid: 0, No.18000 iter, val mrr=0.3820995428373222
+2023-04-28 13:56:24,281 INFO     ==> pid: 0, No.18000 iter, test mrr=0.36769950811017854
+2023-04-28 13:58:28,456 INFO     ==> pid: 0, No.19000 iter, val mrr=0.3814785175565225
+2023-04-28 14:00:31,960 INFO     ==> pid: 0, No.20000 iter, val mrr=0.3819268499720988
+2023-04-28 14:02:35,286 INFO     ==> pid: 0, No.21000 iter, val mrr=0.3804947391040014
+2023-04-28 14:04:38,531 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3850003209633521
+2023-04-28 14:04:41,506 INFO     ==> pid: 0, No.22000 iter, test mrr=0.37261294794001615
+2023-04-28 14:06:44,662 INFO     ==> pid: 0, No.23000 iter, val mrr=0.38500510449645
+2023-04-28 14:06:47,631 INFO     ==> pid: 0, No.23000 iter, test mrr=0.3725022451536193
+2023-04-28 14:08:50,384 INFO     ==> pid: 0, No.24000 iter, val mrr=0.3858059161034328
+2023-04-28 14:08:53,305 INFO     ==> pid: 0, No.24000 iter, test mrr=0.3734011055230201
+2023-04-28 14:10:56,746 INFO     ==> pid: 0, No.25000 iter, val mrr=0.38674165733092825
+2023-04-28 14:10:59,855 INFO     ==> pid: 0, No.25000 iter, test mrr=0.3738315302442941
+2023-04-28 14:13:03,454 INFO     ==> pid: 0, No.26000 iter, val mrr=0.3859422890536074
+2023-04-28 14:15:06,603 INFO     ==> pid: 0, No.27000 iter, val mrr=0.3859979440064663
+2023-04-28 14:17:09,610 INFO     ==> pid: 0, No.28000 iter, val mrr=0.38650231460241485
+2023-04-28 14:19:12,658 INFO     ==> pid: 0, No.29000 iter, val mrr=0.3881253443825263
+2023-04-28 14:19:15,633 INFO     ==> pid: 0, No.29000 iter, test mrr=0.3742465879733576
+2023-04-28 14:21:18,738 INFO     ==> pid: 0, No.30000 iter, val mrr=0.3881262211741941
+2023-04-28 14:21:21,634 INFO     ==> pid: 0, No.30000 iter, test mrr=0.37463051869824404
+2023-04-28 14:23:24,654 INFO     ==> pid: 0, No.31000 iter, val mrr=0.38822944831075945
+2023-04-28 14:23:27,791 INFO     ==> pid: 0, No.31000 iter, test mrr=0.37495783455703885
+2023-04-28 14:25:30,886 INFO     ==> pid: 0, No.32000 iter, val mrr=0.3867937076481581
+2023-04-28 14:27:33,222 INFO     ==> pid: 0, No.33000 iter, val mrr=0.38794096857562355
+2023-04-28 14:29:36,498 INFO     ==> pid: 0, No.34000 iter, val mrr=0.387939146901119
+2023-04-28 14:31:40,571 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3881830466360415
+2023-04-28 14:33:43,872 INFO     ==> pid: 0, No.36000 iter, val mrr=0.38798340041644735
+2023-04-28 14:33:43,873 INFO     ==> pid: 0, early stopping at No.36000 step
+2023-04-28 14:33:44,267 INFO     trials:10/200
+2023-04-28 14:33:50,044 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 200, 'n_neg': 32, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.007592737753734099, 'regu_weight': 0.00037159451938706417, 'advs': 0, 'dropoutRate': 0.0678315181612218, 'gamma': 22.63336898879561, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 14:33:50,069 INFO     ==> pid: 0, num_parameters for TTransE: 1918602
+2023-04-28 14:33:53,907 INFO     ==> pid: 0, No.1 iter, val mrr=0.0016352678481648696
+2023-04-28 14:33:56,789 INFO     ==> pid: 0, No.1 iter, test mrr=0.001333723640585727
+2023-04-28 14:35:11,110 INFO     ==> pid: 0, No.1000 iter, val mrr=0.23443483241253588
+2023-04-28 14:35:14,054 INFO     ==> pid: 0, No.1000 iter, test mrr=0.2266969307087985
+2023-04-28 14:36:28,411 INFO     ==> pid: 0, No.2000 iter, val mrr=0.23691907310409524
+2023-04-28 14:36:31,589 INFO     ==> pid: 0, No.2000 iter, test mrr=0.22975817931390102
+2023-04-28 14:37:46,647 INFO     ==> pid: 0, No.3000 iter, val mrr=0.2339990014992846
+2023-04-28 14:39:01,271 INFO     ==> pid: 0, No.4000 iter, val mrr=0.22626054472305354
+2023-04-28 14:40:15,806 INFO     ==> pid: 0, No.5000 iter, val mrr=0.2204891120856811
+2023-04-28 14:41:30,812 INFO     ==> pid: 0, No.6000 iter, val mrr=0.2481469252755863
+2023-04-28 14:41:34,064 INFO     ==> pid: 0, No.6000 iter, test mrr=0.23941419184579935
+2023-04-28 14:42:49,703 INFO     ==> pid: 0, No.7000 iter, val mrr=0.2470430432532184
+2023-04-28 14:44:04,294 INFO     ==> pid: 0, No.8000 iter, val mrr=0.24699669996766488
+2023-04-28 14:45:18,800 INFO     ==> pid: 0, No.9000 iter, val mrr=0.2462613563812258
+2023-04-28 14:46:33,955 INFO     ==> pid: 0, No.10000 iter, val mrr=0.2624523603822412
+2023-04-28 14:46:36,959 INFO     ==> pid: 0, No.10000 iter, test mrr=0.2553169631859978
+2023-04-28 14:47:52,730 INFO     ==> pid: 0, No.11000 iter, val mrr=0.2652461574981551
+2023-04-28 14:47:55,542 INFO     ==> pid: 0, No.11000 iter, test mrr=0.25863327259821195
+2023-04-28 14:49:11,337 INFO     ==> pid: 0, No.12000 iter, val mrr=0.26592303587897875
+2023-04-28 14:49:14,382 INFO     ==> pid: 0, No.12000 iter, test mrr=0.256805256721935
+2023-04-28 14:50:29,126 INFO     ==> pid: 0, No.13000 iter, val mrr=0.26636822013267436
+2023-04-28 14:50:32,200 INFO     ==> pid: 0, No.13000 iter, test mrr=0.25898935949794244
+2023-04-28 14:51:47,529 INFO     ==> pid: 0, No.14000 iter, val mrr=0.265389958097341
+2023-04-28 14:53:01,958 INFO     ==> pid: 0, No.15000 iter, val mrr=0.26729157335474746
+2023-04-28 14:53:04,924 INFO     ==> pid: 0, No.15000 iter, test mrr=0.2595869013726881
+2023-04-28 14:54:19,513 INFO     ==> pid: 0, No.16000 iter, val mrr=0.2669823163167345
+2023-04-28 14:55:34,063 INFO     ==> pid: 0, No.17000 iter, val mrr=0.2667090683001202
+2023-04-28 14:56:48,879 INFO     ==> pid: 0, No.18000 iter, val mrr=0.2679273428527347
+2023-04-28 14:56:51,695 INFO     ==> pid: 0, No.18000 iter, test mrr=0.2597028507174651
+2023-04-28 14:58:06,179 INFO     ==> pid: 0, No.19000 iter, val mrr=0.2685514385070829
+2023-04-28 14:58:09,232 INFO     ==> pid: 0, No.19000 iter, test mrr=0.2609835775886819
+2023-04-28 14:59:23,574 INFO     ==> pid: 0, No.20000 iter, val mrr=0.26855075667654005
+2023-04-28 15:00:38,104 INFO     ==> pid: 0, No.21000 iter, val mrr=0.2679264277276012
+2023-04-28 15:01:52,688 INFO     ==> pid: 0, No.22000 iter, val mrr=0.26924562743645825
+2023-04-28 15:01:55,648 INFO     ==> pid: 0, No.22000 iter, test mrr=0.2616112193783063
+2023-04-28 15:03:10,795 INFO     ==> pid: 0, No.23000 iter, val mrr=0.2671178842146956
+2023-04-28 15:04:25,218 INFO     ==> pid: 0, No.24000 iter, val mrr=0.2695801652308012
+2023-04-28 15:04:28,154 INFO     ==> pid: 0, No.24000 iter, test mrr=0.26229806838455283
+2023-04-28 15:05:42,078 INFO     ==> pid: 0, No.25000 iter, val mrr=0.26992746175164267
+2023-04-28 15:05:45,181 INFO     ==> pid: 0, No.25000 iter, test mrr=0.26119133958607543
+2023-04-28 15:06:59,821 INFO     ==> pid: 0, No.26000 iter, val mrr=0.2709717904480124
+2023-04-28 15:07:02,922 INFO     ==> pid: 0, No.26000 iter, test mrr=0.26246199816024934
+2023-04-28 15:08:18,231 INFO     ==> pid: 0, No.27000 iter, val mrr=0.2694626951795601
+2023-04-28 15:09:32,297 INFO     ==> pid: 0, No.28000 iter, val mrr=0.2692111127293054
+2023-04-28 15:10:46,307 INFO     ==> pid: 0, No.29000 iter, val mrr=0.27004820692009396
+2023-04-28 15:12:01,618 INFO     ==> pid: 0, No.30000 iter, val mrr=0.27646637275718683
+2023-04-28 15:12:04,597 INFO     ==> pid: 0, No.30000 iter, test mrr=0.2693158465909307
+2023-04-28 15:13:19,190 INFO     ==> pid: 0, No.31000 iter, val mrr=0.2773429453304522
+2023-04-28 15:13:21,951 INFO     ==> pid: 0, No.31000 iter, test mrr=0.26904075962708224
+2023-04-28 15:14:37,618 INFO     ==> pid: 0, No.32000 iter, val mrr=0.27890652266596966
+2023-04-28 15:14:40,471 INFO     ==> pid: 0, No.32000 iter, test mrr=0.2707089622085284
+2023-04-28 15:15:55,862 INFO     ==> pid: 0, No.33000 iter, val mrr=0.2764567925445962
+2023-04-28 15:17:12,019 INFO     ==> pid: 0, No.34000 iter, val mrr=0.27743539619007807
+2023-04-28 15:18:27,587 INFO     ==> pid: 0, No.35000 iter, val mrr=0.27827929754898817
+2023-04-28 15:19:42,972 INFO     ==> pid: 0, No.36000 iter, val mrr=0.2810882989609569
+2023-04-28 15:19:46,006 INFO     ==> pid: 0, No.36000 iter, test mrr=0.27433831003465936
+2023-04-28 15:21:01,096 INFO     ==> pid: 0, No.37000 iter, val mrr=0.2820302408064143
+2023-04-28 15:21:03,847 INFO     ==> pid: 0, No.37000 iter, test mrr=0.2744823409298905
+2023-04-28 15:22:18,264 INFO     ==> pid: 0, No.38000 iter, val mrr=0.28144594360411684
+2023-04-28 15:23:36,687 INFO     ==> pid: 0, No.39000 iter, val mrr=0.2828604085461827
+2023-04-28 15:23:39,269 INFO     ==> pid: 0, No.39000 iter, test mrr=0.27468429730720195
+2023-04-28 15:24:57,053 INFO     ==> pid: 0, No.40000 iter, val mrr=0.28245125042032354
+2023-04-28 15:26:10,527 INFO     ==> pid: 0, No.41000 iter, val mrr=0.2824547532081031
+2023-04-28 15:27:27,644 INFO     ==> pid: 0, No.42000 iter, val mrr=0.2834318829852692
+2023-04-28 15:27:30,512 INFO     ==> pid: 0, No.42000 iter, test mrr=0.27469704799570455
+2023-04-28 15:28:45,260 INFO     ==> pid: 0, No.43000 iter, val mrr=0.2829099008897468
+2023-04-28 15:29:58,912 INFO     ==> pid: 0, No.44000 iter, val mrr=0.28372439565857394
+2023-04-28 15:30:01,516 INFO     ==> pid: 0, No.44000 iter, test mrr=0.27575359510726066
+2023-04-28 15:31:15,873 INFO     ==> pid: 0, No.45000 iter, val mrr=0.2836324810356453
+2023-04-28 15:32:29,458 INFO     ==> pid: 0, No.46000 iter, val mrr=0.28344461643375585
+2023-04-28 15:33:46,645 INFO     ==> pid: 0, No.47000 iter, val mrr=0.28381136018034536
+2023-04-28 15:33:49,216 INFO     ==> pid: 0, No.47000 iter, test mrr=0.2748021298368882
+2023-04-28 15:35:04,546 INFO     ==> pid: 0, No.48000 iter, val mrr=0.28347291674170855
+2023-04-28 15:36:18,184 INFO     ==> pid: 0, No.49000 iter, val mrr=0.2832916304896315
+2023-04-28 15:37:31,528 INFO     ==> pid: 0, No.50000 iter, val mrr=0.2826193759653607
+2023-04-28 15:37:31,982 INFO     trials:11/200
+2023-04-28 15:37:38,213 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 2000, 'n_neg': 0, 'regularizer': 'None', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.004875784472873758, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.05612066435113385, 'gamma': 22.43617288347985, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 15:37:38,695 INFO     ==> pid: 0, num_parameters for TTransE: 47986002
+2023-04-28 15:37:39,161 WARNING  out of memory in training step
+2023-04-28 15:37:39,588 INFO     trials:12/200
+2023-04-28 15:37:45,515 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 2000, 'n_neg': 0, 'regularizer': 'DURA', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.018014748358561497, 'regu_weight': 0.0013163273350071708, 'advs': 0, 'dropoutRate': 0.046034370586157246, 'gamma': 21.383078748994183, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 15:37:45,993 INFO     ==> pid: 0, num_parameters for TTransE: 47986002
+2023-04-28 15:37:46,429 WARNING  out of memory in training step
+2023-04-28 15:37:46,813 INFO     trials:13/200
+2023-04-28 15:37:52,433 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 100, 'n_neg': 512, 'regularizer': 'None', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.013972914447796612, 'regu_weight': 0, 'advs': 0, 'dropoutRate': 0.02442674284798917, 'gamma': 21.55667360180369, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 15:37:52,443 INFO     ==> pid: 0, num_parameters for TTransE: 879302
+2023-04-28 15:37:55,518 INFO     ==> pid: 0, No.1 iter, val mrr=0.0022332082307873163
+2023-04-28 15:37:57,951 INFO     ==> pid: 0, No.1 iter, test mrr=0.001899645793557333
+2023-04-28 15:39:14,949 INFO     ==> pid: 0, No.1000 iter, val mrr=0.12935907220417817
+2023-04-28 15:39:17,563 INFO     ==> pid: 0, No.1000 iter, test mrr=0.1281689224120481
+2023-04-28 15:40:34,939 INFO     ==> pid: 0, No.2000 iter, val mrr=0.23322980736503424
+2023-04-28 15:40:37,373 INFO     ==> pid: 0, No.2000 iter, test mrr=0.22771144259953902
+2023-04-28 15:42:00,068 INFO     ==> pid: 0, No.3000 iter, val mrr=0.27026562828015677
+2023-04-28 15:42:02,789 INFO     ==> pid: 0, No.3000 iter, test mrr=0.2622099859521503
+2023-04-28 15:43:21,221 INFO     ==> pid: 0, No.4000 iter, val mrr=0.28876738504279853
+2023-04-28 15:43:23,658 INFO     ==> pid: 0, No.4000 iter, test mrr=0.2800502977521017
+2023-04-28 15:44:41,949 INFO     ==> pid: 0, No.5000 iter, val mrr=0.2988715939334076
+2023-04-28 15:44:44,592 INFO     ==> pid: 0, No.5000 iter, test mrr=0.29151481923694894
+2023-04-28 15:46:04,792 INFO     ==> pid: 0, No.6000 iter, val mrr=0.3046330111576835
+2023-04-28 15:46:07,363 INFO     ==> pid: 0, No.6000 iter, test mrr=0.29641211247973837
+2023-04-28 15:47:25,187 INFO     ==> pid: 0, No.7000 iter, val mrr=0.3015049357206408
+2023-04-28 15:48:42,855 INFO     ==> pid: 0, No.8000 iter, val mrr=0.29663091504544187
+2023-04-28 15:50:01,213 INFO     ==> pid: 0, No.9000 iter, val mrr=0.2946217263060189
+2023-04-28 15:51:22,216 INFO     ==> pid: 0, No.10000 iter, val mrr=0.3219008310344792
+2023-04-28 15:51:24,669 INFO     ==> pid: 0, No.10000 iter, test mrr=0.3113103783155061
+2023-04-28 15:52:42,365 INFO     ==> pid: 0, No.11000 iter, val mrr=0.32308047907725124
+2023-04-28 15:52:45,321 INFO     ==> pid: 0, No.11000 iter, test mrr=0.31215668684661096
+2023-04-28 15:54:07,414 INFO     ==> pid: 0, No.12000 iter, val mrr=0.3237102132879992
+2023-04-28 15:54:09,929 INFO     ==> pid: 0, No.12000 iter, test mrr=0.3133162111502598
+2023-04-28 15:55:28,215 INFO     ==> pid: 0, No.13000 iter, val mrr=0.32307990513850626
+2023-04-28 15:56:46,682 INFO     ==> pid: 0, No.14000 iter, val mrr=0.3258790574932146
+2023-04-28 15:56:49,287 INFO     ==> pid: 0, No.14000 iter, test mrr=0.31515455860099056
+2023-04-28 15:58:07,314 INFO     ==> pid: 0, No.15000 iter, val mrr=0.32605166279409614
+2023-04-28 15:58:09,714 INFO     ==> pid: 0, No.15000 iter, test mrr=0.3154959513280427
+2023-04-28 15:59:29,261 INFO     ==> pid: 0, No.16000 iter, val mrr=0.3287123093436319
+2023-04-28 15:59:31,618 INFO     ==> pid: 0, No.16000 iter, test mrr=0.31660251281995155
+2023-04-28 16:00:51,561 INFO     ==> pid: 0, No.17000 iter, val mrr=0.3240638292133911
+2023-04-28 16:02:11,789 INFO     ==> pid: 0, No.18000 iter, val mrr=0.3279067919678124
+2023-04-28 16:03:32,120 INFO     ==> pid: 0, No.19000 iter, val mrr=0.3262326979483214
+2023-04-28 16:04:54,052 INFO     ==> pid: 0, No.20000 iter, val mrr=0.34908803182704823
+2023-04-28 16:04:57,198 INFO     ==> pid: 0, No.20000 iter, test mrr=0.33782623428822267
+2023-04-28 16:06:20,157 INFO     ==> pid: 0, No.21000 iter, val mrr=0.34553185475712633
+2023-04-28 16:07:42,765 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3462582756579359
+2023-04-28 16:09:04,023 INFO     ==> pid: 0, No.23000 iter, val mrr=0.34516920879577345
+2023-04-28 16:10:24,700 INFO     ==> pid: 0, No.24000 iter, val mrr=0.3558941060936306
+2023-04-28 16:10:27,484 INFO     ==> pid: 0, No.24000 iter, test mrr=0.3444195564250584
+2023-04-28 16:11:49,205 INFO     ==> pid: 0, No.25000 iter, val mrr=0.3558815576808667
+2023-04-28 16:13:10,531 INFO     ==> pid: 0, No.26000 iter, val mrr=0.3556152118129855
+2023-04-28 16:14:32,518 INFO     ==> pid: 0, No.27000 iter, val mrr=0.355115597251199
+2023-04-28 16:15:54,525 INFO     ==> pid: 0, No.28000 iter, val mrr=0.3577805593752885
+2023-04-28 16:15:57,114 INFO     ==> pid: 0, No.28000 iter, test mrr=0.3461984140508879
+2023-04-28 16:17:19,333 INFO     ==> pid: 0, No.29000 iter, val mrr=0.3576796092142757
+2023-04-28 16:18:41,172 INFO     ==> pid: 0, No.30000 iter, val mrr=0.35915272728870296
+2023-04-28 16:18:43,834 INFO     ==> pid: 0, No.30000 iter, test mrr=0.3471326095811351
+2023-04-28 16:20:07,657 INFO     ==> pid: 0, No.31000 iter, val mrr=0.3578204886853023
+2023-04-28 16:21:30,356 INFO     ==> pid: 0, No.32000 iter, val mrr=0.3583260544619004
+2023-04-28 16:22:52,603 INFO     ==> pid: 0, No.33000 iter, val mrr=0.3582813955466118
+2023-04-28 16:24:13,365 INFO     ==> pid: 0, No.34000 iter, val mrr=0.3589840152658958
+2023-04-28 16:25:35,418 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3592551239965651
+2023-04-28 16:25:37,989 INFO     ==> pid: 0, No.35000 iter, test mrr=0.3487318445944689
+2023-04-28 16:27:00,110 INFO     ==> pid: 0, No.36000 iter, val mrr=0.3588352344360738
+2023-04-28 16:28:22,082 INFO     ==> pid: 0, No.37000 iter, val mrr=0.35927684542941285
+2023-04-28 16:28:24,621 INFO     ==> pid: 0, No.37000 iter, test mrr=0.3485660289020311
+2023-04-28 16:29:46,416 INFO     ==> pid: 0, No.38000 iter, val mrr=0.3598097309230661
+2023-04-28 16:29:48,859 INFO     ==> pid: 0, No.38000 iter, test mrr=0.34874662684582924
+2023-04-28 16:31:10,846 INFO     ==> pid: 0, No.39000 iter, val mrr=0.3596356700698756
+2023-04-28 16:32:32,529 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3587332346762212
+2023-04-28 16:33:55,790 INFO     ==> pid: 0, No.41000 iter, val mrr=0.3588346145847543
+2023-04-28 16:35:18,340 INFO     ==> pid: 0, No.42000 iter, val mrr=0.35941840401860586
+2023-04-28 16:36:41,111 INFO     ==> pid: 0, No.43000 iter, val mrr=0.35970938223251775
+2023-04-28 16:36:41,111 INFO     ==> pid: 0, early stopping at No.43000 step
+2023-04-28 16:36:41,509 INFO     trials:14/200
+2023-04-28 16:36:47,761 INFO     ==> pid: 0, proparams_dict: {'batch_size': 128, 'dim': 100, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.002763438475486109, 'regu_weight': 0.00022037432749740074, 'advs': 0, 'dropoutRate': 0.051060245690610996, 'gamma': 23.9349469656906, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 16:36:47,780 INFO     ==> pid: 0, num_parameters for TTransE: 879302
+2023-04-28 16:36:50,933 INFO     ==> pid: 0, No.1 iter, val mrr=0.0014607984709207008
+2023-04-28 16:36:53,329 INFO     ==> pid: 0, No.1 iter, test mrr=0.0013604719633982941
+2023-04-28 16:37:18,498 INFO     ==> pid: 0, No.1000 iter, val mrr=0.006349989834668248
+2023-04-28 16:37:21,055 INFO     ==> pid: 0, No.1000 iter, test mrr=0.006410093827289621
+2023-04-28 16:37:45,650 INFO     ==> pid: 0, No.2000 iter, val mrr=0.006531520041623065
+2023-04-28 16:37:48,213 INFO     ==> pid: 0, No.2000 iter, test mrr=0.006512514221481461
+2023-04-28 16:38:13,789 INFO     ==> pid: 0, No.3000 iter, val mrr=0.006870473758233297
+2023-04-28 16:38:16,267 INFO     ==> pid: 0, No.3000 iter, test mrr=0.00704775740385404
+2023-04-28 16:38:42,899 INFO     ==> pid: 0, No.4000 iter, val mrr=0.007969343980356399
+2023-04-28 16:38:45,515 INFO     ==> pid: 0, No.4000 iter, test mrr=0.00806355622061542
+2023-04-28 16:39:11,122 INFO     ==> pid: 0, No.5000 iter, val mrr=0.010504698816761597
+2023-04-28 16:39:13,665 INFO     ==> pid: 0, No.5000 iter, test mrr=0.010629565897356082
+2023-04-28 16:39:38,786 INFO     ==> pid: 0, No.6000 iter, val mrr=0.017361415297128223
+2023-04-28 16:39:41,371 INFO     ==> pid: 0, No.6000 iter, test mrr=0.017679122312561836
+2023-04-28 16:40:06,777 INFO     ==> pid: 0, No.7000 iter, val mrr=0.032647613002656554
+2023-04-28 16:40:09,433 INFO     ==> pid: 0, No.7000 iter, test mrr=0.03279102902476614
+2023-04-28 16:40:34,774 INFO     ==> pid: 0, No.8000 iter, val mrr=0.06826803190130996
+2023-04-28 16:40:37,348 INFO     ==> pid: 0, No.8000 iter, test mrr=0.06610188321689929
+2023-04-28 16:41:02,528 INFO     ==> pid: 0, No.9000 iter, val mrr=0.13083399438828058
+2023-04-28 16:41:04,906 INFO     ==> pid: 0, No.9000 iter, test mrr=0.12645955873527615
+2023-04-28 16:41:30,755 INFO     ==> pid: 0, No.10000 iter, val mrr=0.1942590986598334
+2023-04-28 16:41:33,410 INFO     ==> pid: 0, No.10000 iter, test mrr=0.18782810172438785
+2023-04-28 16:41:59,622 INFO     ==> pid: 0, No.11000 iter, val mrr=0.24740892322424643
+2023-04-28 16:42:02,024 INFO     ==> pid: 0, No.11000 iter, test mrr=0.23592582404563908
+2023-04-28 16:42:27,281 INFO     ==> pid: 0, No.12000 iter, val mrr=0.2848346618459187
+2023-04-28 16:42:29,818 INFO     ==> pid: 0, No.12000 iter, test mrr=0.27594001547828856
+2023-04-28 16:42:54,877 INFO     ==> pid: 0, No.13000 iter, val mrr=0.30917059709797406
+2023-04-28 16:42:57,548 INFO     ==> pid: 0, No.13000 iter, test mrr=0.2965109421775626
+2023-04-28 16:43:22,698 INFO     ==> pid: 0, No.14000 iter, val mrr=0.3239795989846885
+2023-04-28 16:43:25,169 INFO     ==> pid: 0, No.14000 iter, test mrr=0.311114875927979
+2023-04-28 16:43:50,205 INFO     ==> pid: 0, No.15000 iter, val mrr=0.33110769600138923
+2023-04-28 16:43:52,556 INFO     ==> pid: 0, No.15000 iter, test mrr=0.3191461853804867
+2023-04-28 16:44:18,489 INFO     ==> pid: 0, No.16000 iter, val mrr=0.3366820143568547
+2023-04-28 16:44:20,912 INFO     ==> pid: 0, No.16000 iter, test mrr=0.32737753887280197
+2023-04-28 16:44:45,735 INFO     ==> pid: 0, No.17000 iter, val mrr=0.34349320848027304
+2023-04-28 16:44:48,281 INFO     ==> pid: 0, No.17000 iter, test mrr=0.3308699550239787
+2023-04-28 16:45:13,445 INFO     ==> pid: 0, No.18000 iter, val mrr=0.3479350072749169
+2023-04-28 16:45:15,901 INFO     ==> pid: 0, No.18000 iter, test mrr=0.3354583917276149
+2023-04-28 16:45:41,350 INFO     ==> pid: 0, No.19000 iter, val mrr=0.34893369683370745
+2023-04-28 16:45:43,945 INFO     ==> pid: 0, No.19000 iter, test mrr=0.3361293523442174
+2023-04-28 16:46:09,367 INFO     ==> pid: 0, No.20000 iter, val mrr=0.34891832213933416
+2023-04-28 16:46:34,568 INFO     ==> pid: 0, No.21000 iter, val mrr=0.34995811011810146
+2023-04-28 16:46:36,995 INFO     ==> pid: 0, No.21000 iter, test mrr=0.33881032660152166
+2023-04-28 16:47:02,582 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3525355269403047
+2023-04-28 16:47:05,140 INFO     ==> pid: 0, No.22000 iter, test mrr=0.34209639684006804
+2023-04-28 16:47:30,649 INFO     ==> pid: 0, No.23000 iter, val mrr=0.35415997661271564
+2023-04-28 16:47:33,169 INFO     ==> pid: 0, No.23000 iter, test mrr=0.34174507935774234
+2023-04-28 16:47:57,687 INFO     ==> pid: 0, No.24000 iter, val mrr=0.3540754069622883
+2023-04-28 16:48:22,642 INFO     ==> pid: 0, No.25000 iter, val mrr=0.3574310053362037
+2023-04-28 16:48:25,184 INFO     ==> pid: 0, No.25000 iter, test mrr=0.3481022545300087
+2023-04-28 16:48:50,545 INFO     ==> pid: 0, No.26000 iter, val mrr=0.358286736124828
+2023-04-28 16:48:53,045 INFO     ==> pid: 0, No.26000 iter, test mrr=0.345862598379478
+2023-04-28 16:49:18,267 INFO     ==> pid: 0, No.27000 iter, val mrr=0.35598961943961027
+2023-04-28 16:49:43,750 INFO     ==> pid: 0, No.28000 iter, val mrr=0.36018861001188074
+2023-04-28 16:49:46,402 INFO     ==> pid: 0, No.28000 iter, test mrr=0.3469111853034495
+2023-04-28 16:50:11,344 INFO     ==> pid: 0, No.29000 iter, val mrr=0.3579740890533675
+2023-04-28 16:50:36,617 INFO     ==> pid: 0, No.30000 iter, val mrr=0.358293680960974
+2023-04-28 16:51:01,779 INFO     ==> pid: 0, No.31000 iter, val mrr=0.3594328242785427
+2023-04-28 16:51:27,310 INFO     ==> pid: 0, No.32000 iter, val mrr=0.3701487945798373
+2023-04-28 16:51:29,894 INFO     ==> pid: 0, No.32000 iter, test mrr=0.3575690500206018
+2023-04-28 16:51:54,196 INFO     ==> pid: 0, No.33000 iter, val mrr=0.37200560452685477
+2023-04-28 16:51:56,605 INFO     ==> pid: 0, No.33000 iter, test mrr=0.35956783425459055
+2023-04-28 16:52:21,550 INFO     ==> pid: 0, No.34000 iter, val mrr=0.3724469485531969
+2023-04-28 16:52:24,066 INFO     ==> pid: 0, No.34000 iter, test mrr=0.35969507734741657
+2023-04-28 16:52:48,964 INFO     ==> pid: 0, No.35000 iter, val mrr=0.37046025525110926
+2023-04-28 16:53:14,062 INFO     ==> pid: 0, No.36000 iter, val mrr=0.37158540186617633
+2023-04-28 16:53:39,239 INFO     ==> pid: 0, No.37000 iter, val mrr=0.37199116351391304
+2023-04-28 16:54:04,720 INFO     ==> pid: 0, No.38000 iter, val mrr=0.3753589020447031
+2023-04-28 16:54:07,960 INFO     ==> pid: 0, No.38000 iter, test mrr=0.36341254806623025
+2023-04-28 16:54:33,350 INFO     ==> pid: 0, No.39000 iter, val mrr=0.3754086878520891
+2023-04-28 16:54:35,967 INFO     ==> pid: 0, No.39000 iter, test mrr=0.3637231328073106
+2023-04-28 16:55:01,553 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3753644002300885
+2023-04-28 16:55:26,773 INFO     ==> pid: 0, No.41000 iter, val mrr=0.37636757602182386
+2023-04-28 16:55:29,496 INFO     ==> pid: 0, No.41000 iter, test mrr=0.3656607247550178
+2023-04-28 16:55:54,053 INFO     ==> pid: 0, No.42000 iter, val mrr=0.3781784275835741
+2023-04-28 16:55:56,585 INFO     ==> pid: 0, No.42000 iter, test mrr=0.3659018676238927
+2023-04-28 16:56:21,736 INFO     ==> pid: 0, No.43000 iter, val mrr=0.37602029385882546
+2023-04-28 16:56:46,927 INFO     ==> pid: 0, No.44000 iter, val mrr=0.37627049814337343
+2023-04-28 16:57:11,801 INFO     ==> pid: 0, No.45000 iter, val mrr=0.3751562319938193
+2023-04-28 16:57:37,194 INFO     ==> pid: 0, No.46000 iter, val mrr=0.3784586021862333
+2023-04-28 16:57:39,678 INFO     ==> pid: 0, No.46000 iter, test mrr=0.3668538900565386
+2023-04-28 16:58:05,139 INFO     ==> pid: 0, No.47000 iter, val mrr=0.3783559264154467
+2023-04-28 16:58:30,383 INFO     ==> pid: 0, No.48000 iter, val mrr=0.37852193535444195
+2023-04-28 16:58:32,679 INFO     ==> pid: 0, No.48000 iter, test mrr=0.3671825883529269
+2023-04-28 16:58:57,749 INFO     ==> pid: 0, No.49000 iter, val mrr=0.37871581143785576
+2023-04-28 16:59:00,106 INFO     ==> pid: 0, No.49000 iter, test mrr=0.3669879260289536
+2023-04-28 16:59:25,453 INFO     ==> pid: 0, No.50000 iter, val mrr=0.37832795619178805
+2023-04-28 16:59:25,883 INFO     trials:15/200
+2023-04-28 16:59:31,460 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 100, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'CE', 'initializer': 'uniform', 'lr': 0.07978783851164269, 'regu_weight': 2.8745925784977226e-08, 'advs': 0, 'dropoutRate': 0.04138732056315061, 'gamma': 23.7921810892868, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'kVsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 16:59:31,473 INFO     ==> pid: 0, num_parameters for TTransE: 879302
+2023-04-28 16:59:34,662 INFO     ==> pid: 0, No.1 iter, val mrr=0.0019113623639092322
+2023-04-28 16:59:37,158 INFO     ==> pid: 0, No.1 iter, test mrr=0.0019215330413825417
+2023-04-28 17:00:53,297 INFO     ==> pid: 0, No.1000 iter, val mrr=0.26332455236621916
+2023-04-28 17:00:55,956 INFO     ==> pid: 0, No.1000 iter, test mrr=0.25890838128417265
+2023-04-28 17:02:13,000 INFO     ==> pid: 0, No.2000 iter, val mrr=0.2691452479650731
+2023-04-28 17:02:15,336 INFO     ==> pid: 0, No.2000 iter, test mrr=0.26181200634536994
+2023-04-28 17:03:31,940 INFO     ==> pid: 0, No.3000 iter, val mrr=0.281545720059601
+2023-04-28 17:03:34,354 INFO     ==> pid: 0, No.3000 iter, test mrr=0.27385994245580547
+2023-04-28 17:04:52,833 INFO     ==> pid: 0, No.4000 iter, val mrr=0.2868357901378942
+2023-04-28 17:04:55,279 INFO     ==> pid: 0, No.4000 iter, test mrr=0.2772992863016375
+2023-04-28 17:06:11,965 INFO     ==> pid: 0, No.5000 iter, val mrr=0.29318614753411737
+2023-04-28 17:06:14,521 INFO     ==> pid: 0, No.5000 iter, test mrr=0.2851893239355808
+2023-04-28 17:07:31,866 INFO     ==> pid: 0, No.6000 iter, val mrr=0.2957340054867271
+2023-04-28 17:07:34,298 INFO     ==> pid: 0, No.6000 iter, test mrr=0.2894019475969692
+2023-04-28 17:08:54,089 INFO     ==> pid: 0, No.7000 iter, val mrr=0.2891718455857781
+2023-04-28 17:10:15,074 INFO     ==> pid: 0, No.8000 iter, val mrr=0.29678087054383684
+2023-04-28 17:10:17,842 INFO     ==> pid: 0, No.8000 iter, test mrr=0.29298734725020936
+2023-04-28 17:11:38,108 INFO     ==> pid: 0, No.9000 iter, val mrr=0.2980371686322981
+2023-04-28 17:11:40,966 INFO     ==> pid: 0, No.9000 iter, test mrr=0.2901871204068671
+2023-04-28 17:13:00,374 INFO     ==> pid: 0, No.10000 iter, val mrr=0.2963328346327493
+2023-04-28 17:14:19,975 INFO     ==> pid: 0, No.11000 iter, val mrr=0.30061934711369437
+2023-04-28 17:14:23,011 INFO     ==> pid: 0, No.11000 iter, test mrr=0.2902267377124496
+2023-04-28 17:15:42,735 INFO     ==> pid: 0, No.12000 iter, val mrr=0.29878977792617084
+2023-04-28 17:17:02,028 INFO     ==> pid: 0, No.13000 iter, val mrr=0.3018767786328183
+2023-04-28 17:17:04,839 INFO     ==> pid: 0, No.13000 iter, test mrr=0.2936391203225568
+2023-04-28 17:18:24,607 INFO     ==> pid: 0, No.14000 iter, val mrr=0.2970065810292855
+2023-04-28 17:19:44,262 INFO     ==> pid: 0, No.15000 iter, val mrr=0.29657285008590323
+2023-04-28 17:21:04,402 INFO     ==> pid: 0, No.16000 iter, val mrr=0.3032752324136361
+2023-04-28 17:21:07,036 INFO     ==> pid: 0, No.16000 iter, test mrr=0.293402319567249
+2023-04-28 17:22:26,632 INFO     ==> pid: 0, No.17000 iter, val mrr=0.3035454493835773
+2023-04-28 17:22:29,410 INFO     ==> pid: 0, No.17000 iter, test mrr=0.2971998347752764
+2023-04-28 17:23:49,204 INFO     ==> pid: 0, No.18000 iter, val mrr=0.3011256719911163
+2023-04-28 17:25:09,664 INFO     ==> pid: 0, No.19000 iter, val mrr=0.30477730385092033
+2023-04-28 17:25:12,465 INFO     ==> pid: 0, No.19000 iter, test mrr=0.30023589562311515
+2023-04-28 17:26:31,914 INFO     ==> pid: 0, No.20000 iter, val mrr=0.30286879658595295
+2023-04-28 17:27:51,975 INFO     ==> pid: 0, No.21000 iter, val mrr=0.3030833333238818
+2023-04-28 17:29:11,822 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3046774151699159
+2023-04-28 17:30:32,070 INFO     ==> pid: 0, No.23000 iter, val mrr=0.32518998897216855
+2023-04-28 17:30:34,814 INFO     ==> pid: 0, No.23000 iter, test mrr=0.3185889754281125
+2023-04-28 17:31:54,855 INFO     ==> pid: 0, No.24000 iter, val mrr=0.32719903563508435
+2023-04-28 17:31:57,536 INFO     ==> pid: 0, No.24000 iter, test mrr=0.32008666060125446
+2023-04-28 17:33:17,441 INFO     ==> pid: 0, No.25000 iter, val mrr=0.32825264671973625
+2023-04-28 17:33:20,140 INFO     ==> pid: 0, No.25000 iter, test mrr=0.3177973567839714
+2023-04-28 17:34:39,747 INFO     ==> pid: 0, No.26000 iter, val mrr=0.32458435496229016
+2023-04-28 17:35:59,438 INFO     ==> pid: 0, No.27000 iter, val mrr=0.3267900604599036
+2023-04-28 17:37:19,498 INFO     ==> pid: 0, No.28000 iter, val mrr=0.32735461728671206
+2023-04-28 17:38:39,520 INFO     ==> pid: 0, No.29000 iter, val mrr=0.3455707389632079
+2023-04-28 17:38:42,385 INFO     ==> pid: 0, No.29000 iter, test mrr=0.33385369306064594
+2023-04-28 17:40:02,387 INFO     ==> pid: 0, No.30000 iter, val mrr=0.3419547157433002
+2023-04-28 17:41:21,713 INFO     ==> pid: 0, No.31000 iter, val mrr=0.34551909138632586
+2023-04-28 17:42:42,042 INFO     ==> pid: 0, No.32000 iter, val mrr=0.34373737666255216
+2023-04-28 17:44:03,189 INFO     ==> pid: 0, No.33000 iter, val mrr=0.35501415867925723
+2023-04-28 17:44:05,882 INFO     ==> pid: 0, No.33000 iter, test mrr=0.3444259826957537
+2023-04-28 17:45:26,055 INFO     ==> pid: 0, No.34000 iter, val mrr=0.3535560400203668
+2023-04-28 17:46:46,028 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3519055668424172
+2023-04-28 17:48:05,784 INFO     ==> pid: 0, No.36000 iter, val mrr=0.3554255136754366
+2023-04-28 17:48:08,480 INFO     ==> pid: 0, No.36000 iter, test mrr=0.3459602787044771
+2023-04-28 17:49:28,343 INFO     ==> pid: 0, No.37000 iter, val mrr=0.3549630439881564
+2023-04-28 17:50:47,781 INFO     ==> pid: 0, No.38000 iter, val mrr=0.35519256504443025
+2023-04-28 17:52:07,775 INFO     ==> pid: 0, No.39000 iter, val mrr=0.35301010976467245
+2023-04-28 17:53:27,850 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3600542724423839
+2023-04-28 17:53:30,590 INFO     ==> pid: 0, No.40000 iter, test mrr=0.3527502148398848
+2023-04-28 17:54:50,157 INFO     ==> pid: 0, No.41000 iter, val mrr=0.3594569181921207
+2023-04-28 17:56:09,924 INFO     ==> pid: 0, No.42000 iter, val mrr=0.35799347281133564
+2023-04-28 17:57:29,263 INFO     ==> pid: 0, No.43000 iter, val mrr=0.36100560898474343
+2023-04-28 17:57:31,665 INFO     ==> pid: 0, No.43000 iter, test mrr=0.3511019854886066
+2023-04-28 17:58:51,311 INFO     ==> pid: 0, No.44000 iter, val mrr=0.3607875216414288
+2023-04-28 18:00:10,980 INFO     ==> pid: 0, No.45000 iter, val mrr=0.3595022294786412
+2023-04-28 18:01:31,032 INFO     ==> pid: 0, No.46000 iter, val mrr=0.35996871839628003
+2023-04-28 18:02:51,324 INFO     ==> pid: 0, No.47000 iter, val mrr=0.36193935943456135
+2023-04-28 18:02:53,913 INFO     ==> pid: 0, No.47000 iter, test mrr=0.3550131785691564
+2023-04-28 18:04:13,540 INFO     ==> pid: 0, No.48000 iter, val mrr=0.36299987783650384
+2023-04-28 18:04:16,492 INFO     ==> pid: 0, No.48000 iter, test mrr=0.35616200395801606
+2023-04-28 18:05:36,268 INFO     ==> pid: 0, No.49000 iter, val mrr=0.3645244554298001
+2023-04-28 18:05:39,184 INFO     ==> pid: 0, No.49000 iter, test mrr=0.35477138122796104
+2023-04-28 18:06:59,326 INFO     ==> pid: 0, No.50000 iter, val mrr=0.36331539386933753
+2023-04-28 18:06:59,744 INFO     trials:16/200
+2023-04-28 18:07:05,588 INFO     ==> pid: 0, proparams_dict: {'batch_size': 512, 'dim': 500, 'n_neg': 0, 'regularizer': 'FRO', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.008682436185491716, 'regu_weight': 0.0006014509289558734, 'advs': 0, 'dropoutRate': 0.05077497983047422, 'gamma': 23.306963474583917, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 18:07:05,638 INFO     ==> pid: 0, num_parameters for TTransE: 5996502
+2023-04-28 18:07:06,221 WARNING  out of memory in training step
+2023-04-28 18:07:06,605 INFO     trials:17/200
+2023-04-28 18:07:12,681 INFO     ==> pid: 0, proparams_dict: {'batch_size': 256, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.0010271157764181575, 'regu_weight': 4.424568264426515e-08, 'advs': 0, 'dropoutRate': 0.0409640461527073, 'gamma': 23.28139135259218, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 18:07:12,699 INFO     ==> pid: 0, num_parameters for TTransE: 1918602
+2023-04-28 18:07:16,315 INFO     ==> pid: 0, No.1 iter, val mrr=0.0011617751650692084
+2023-04-28 18:07:19,249 INFO     ==> pid: 0, No.1 iter, test mrr=0.0013576763827850204
+2023-04-28 18:08:07,870 INFO     ==> pid: 0, No.1000 iter, val mrr=0.004582238816814469
+2023-04-28 18:08:10,811 INFO     ==> pid: 0, No.1000 iter, test mrr=0.0043262193216093954
+2023-04-28 18:08:59,474 INFO     ==> pid: 0, No.2000 iter, val mrr=0.00467883882180573
+2023-04-28 18:09:02,451 INFO     ==> pid: 0, No.2000 iter, test mrr=0.004315200021327673
+2023-04-28 18:09:51,692 INFO     ==> pid: 0, No.3000 iter, val mrr=0.004837736668270732
+2023-04-28 18:09:54,462 INFO     ==> pid: 0, No.3000 iter, test mrr=0.004434762446165317
+2023-04-28 18:10:43,610 INFO     ==> pid: 0, No.4000 iter, val mrr=0.00509474332113513
+2023-04-28 18:10:46,471 INFO     ==> pid: 0, No.4000 iter, test mrr=0.004722707261194953
+2023-04-28 18:11:35,419 INFO     ==> pid: 0, No.5000 iter, val mrr=0.005902255039670376
+2023-04-28 18:11:38,368 INFO     ==> pid: 0, No.5000 iter, test mrr=0.005389688014442328
+2023-04-28 18:12:27,537 INFO     ==> pid: 0, No.6000 iter, val mrr=0.008010026208079273
+2023-04-28 18:12:30,446 INFO     ==> pid: 0, No.6000 iter, test mrr=0.007365744832397238
+2023-04-28 18:13:19,023 INFO     ==> pid: 0, No.7000 iter, val mrr=0.015748154708782526
+2023-04-28 18:13:21,889 INFO     ==> pid: 0, No.7000 iter, test mrr=0.014311469297457483
+2023-04-28 18:14:10,501 INFO     ==> pid: 0, No.8000 iter, val mrr=0.045275906109341006
+2023-04-28 18:14:13,393 INFO     ==> pid: 0, No.8000 iter, test mrr=0.043492037266061635
+2023-04-28 18:15:02,067 INFO     ==> pid: 0, No.9000 iter, val mrr=0.11157850849725516
+2023-04-28 18:15:05,130 INFO     ==> pid: 0, No.9000 iter, test mrr=0.1082034912640224
+2023-04-28 18:15:53,529 INFO     ==> pid: 0, No.10000 iter, val mrr=0.1784392353569925
+2023-04-28 18:15:56,586 INFO     ==> pid: 0, No.10000 iter, test mrr=0.17589771090965134
+2023-04-28 18:16:45,126 INFO     ==> pid: 0, No.11000 iter, val mrr=0.23449664348191976
+2023-04-28 18:16:47,930 INFO     ==> pid: 0, No.11000 iter, test mrr=0.22738241730750847
+2023-04-28 18:17:37,238 INFO     ==> pid: 0, No.12000 iter, val mrr=0.27584904409869604
+2023-04-28 18:17:40,198 INFO     ==> pid: 0, No.12000 iter, test mrr=0.2689945045243101
+2023-04-28 18:18:28,634 INFO     ==> pid: 0, No.13000 iter, val mrr=0.30980887164056825
+2023-04-28 18:18:31,575 INFO     ==> pid: 0, No.13000 iter, test mrr=0.2992889406521349
+2023-04-28 18:19:20,109 INFO     ==> pid: 0, No.14000 iter, val mrr=0.3317617577438636
+2023-04-28 18:19:23,051 INFO     ==> pid: 0, No.14000 iter, test mrr=0.31886946842971525
+2023-04-28 18:20:12,377 INFO     ==> pid: 0, No.15000 iter, val mrr=0.34551121384668376
+2023-04-28 18:20:15,466 INFO     ==> pid: 0, No.15000 iter, test mrr=0.3341306124855875
+2023-04-28 18:21:03,123 INFO     ==> pid: 0, No.16000 iter, val mrr=0.35446751896606654
+2023-04-28 18:21:06,077 INFO     ==> pid: 0, No.16000 iter, test mrr=0.3420794767870225
+2023-04-28 18:21:51,684 INFO     ==> pid: 0, No.17000 iter, val mrr=0.36074291452663704
+2023-04-28 18:21:54,497 INFO     ==> pid: 0, No.17000 iter, test mrr=0.3486688493626457
+2023-04-28 18:22:40,352 INFO     ==> pid: 0, No.18000 iter, val mrr=0.36399795328841655
+2023-04-28 18:22:43,207 INFO     ==> pid: 0, No.18000 iter, test mrr=0.35197437084114774
+2023-04-28 18:23:28,652 INFO     ==> pid: 0, No.19000 iter, val mrr=0.3660264361927183
+2023-04-28 18:23:31,240 INFO     ==> pid: 0, No.19000 iter, test mrr=0.35301283595452837
+2023-04-28 18:24:16,812 INFO     ==> pid: 0, No.20000 iter, val mrr=0.3693712331725906
+2023-04-28 18:24:19,666 INFO     ==> pid: 0, No.20000 iter, test mrr=0.35685846237443725
+2023-04-28 18:25:05,017 INFO     ==> pid: 0, No.21000 iter, val mrr=0.3703231142082965
+2023-04-28 18:25:07,765 INFO     ==> pid: 0, No.21000 iter, test mrr=0.35923022165977675
+2023-04-28 18:25:53,702 INFO     ==> pid: 0, No.22000 iter, val mrr=0.3694583347459882
+2023-04-28 18:26:39,264 INFO     ==> pid: 0, No.23000 iter, val mrr=0.3711888175036623
+2023-04-28 18:26:42,050 INFO     ==> pid: 0, No.23000 iter, test mrr=0.3586780212476646
+2023-04-28 18:27:28,134 INFO     ==> pid: 0, No.24000 iter, val mrr=0.37330869990673393
+2023-04-28 18:27:30,930 INFO     ==> pid: 0, No.24000 iter, test mrr=0.3602938338950118
+2023-04-28 18:28:16,617 INFO     ==> pid: 0, No.25000 iter, val mrr=0.37401459378386614
+2023-04-28 18:28:19,269 INFO     ==> pid: 0, No.25000 iter, test mrr=0.36080852497707544
+2023-04-28 18:29:05,115 INFO     ==> pid: 0, No.26000 iter, val mrr=0.3739651921936975
+2023-04-28 18:29:50,508 INFO     ==> pid: 0, No.27000 iter, val mrr=0.373635196673672
+2023-04-28 18:30:36,923 INFO     ==> pid: 0, No.28000 iter, val mrr=0.37350613357792684
+2023-04-28 18:31:22,595 INFO     ==> pid: 0, No.29000 iter, val mrr=0.38030026821276197
+2023-04-28 18:31:25,157 INFO     ==> pid: 0, No.29000 iter, test mrr=0.36738248101071314
+2023-04-28 18:32:10,743 INFO     ==> pid: 0, No.30000 iter, val mrr=0.3804459147136356
+2023-04-28 18:32:13,400 INFO     ==> pid: 0, No.30000 iter, test mrr=0.367857326481495
+2023-04-28 18:32:59,035 INFO     ==> pid: 0, No.31000 iter, val mrr=0.3798871666439732
+2023-04-28 18:33:45,668 INFO     ==> pid: 0, No.32000 iter, val mrr=0.37904466910271334
+2023-04-28 18:34:31,048 INFO     ==> pid: 0, No.33000 iter, val mrr=0.3813669645038977
+2023-04-28 18:34:33,719 INFO     ==> pid: 0, No.33000 iter, test mrr=0.3676715881245572
+2023-04-28 18:35:19,124 INFO     ==> pid: 0, No.34000 iter, val mrr=0.38103124107781705
+2023-04-28 18:36:05,466 INFO     ==> pid: 0, No.35000 iter, val mrr=0.38214162076444613
+2023-04-28 18:36:08,205 INFO     ==> pid: 0, No.35000 iter, test mrr=0.3682842515172
+2023-04-28 18:36:53,594 INFO     ==> pid: 0, No.36000 iter, val mrr=0.38090722858040366
+2023-04-28 18:37:39,128 INFO     ==> pid: 0, No.37000 iter, val mrr=0.3828371704607672
+2023-04-28 18:37:41,921 INFO     ==> pid: 0, No.37000 iter, test mrr=0.3677894204127452
+2023-04-28 18:38:26,559 INFO     ==> pid: 0, No.38000 iter, val mrr=0.38232335219375085
+2023-04-28 18:39:12,885 INFO     ==> pid: 0, No.39000 iter, val mrr=0.3813437636506154
+2023-04-28 18:39:58,567 INFO     ==> pid: 0, No.40000 iter, val mrr=0.3816975525688187
+2023-04-28 18:40:44,852 INFO     ==> pid: 0, No.41000 iter, val mrr=0.3842972578230664
+2023-04-28 18:40:47,781 INFO     ==> pid: 0, No.41000 iter, test mrr=0.3697383670374383
+2023-04-28 18:41:32,975 INFO     ==> pid: 0, No.42000 iter, val mrr=0.38441357042871016
+2023-04-28 18:41:36,293 INFO     ==> pid: 0, No.42000 iter, test mrr=0.3700529630935088
+2023-04-28 18:42:22,323 INFO     ==> pid: 0, No.43000 iter, val mrr=0.3838543466341372
+2023-04-28 18:43:08,486 INFO     ==> pid: 0, No.44000 iter, val mrr=0.38399459213779147
+2023-04-28 18:43:54,472 INFO     ==> pid: 0, No.45000 iter, val mrr=0.3834929699203269
+2023-04-28 18:44:39,628 INFO     ==> pid: 0, No.46000 iter, val mrr=0.38485057108264026
+2023-04-28 18:44:42,407 INFO     ==> pid: 0, No.46000 iter, test mrr=0.3704409766526122
+2023-04-28 18:45:28,501 INFO     ==> pid: 0, No.47000 iter, val mrr=0.3847980683770442
+2023-04-28 18:46:13,719 INFO     ==> pid: 0, No.48000 iter, val mrr=0.38535014647598953
+2023-04-28 18:46:16,506 INFO     ==> pid: 0, No.48000 iter, test mrr=0.3705587410178109
+2023-04-28 18:47:02,055 INFO     ==> pid: 0, No.49000 iter, val mrr=0.3850380866288321
+2023-04-28 18:47:46,671 INFO     ==> pid: 0, No.50000 iter, val mrr=0.3852824017017787
+2023-04-28 18:47:47,049 INFO     trials:18/200
+2023-04-28 18:47:53,155 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'normal', 'lr': 0.006978063223856977, 'regu_weight': 0.00014517131138992964, 'advs': 0, 'dropoutRate': 0.042401196655763106, 'gamma': 17.053313235949012, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 18:47:53,174 INFO     ==> pid: 0, num_parameters for TTransE: 1918602
+2023-04-28 18:47:56,332 INFO     ==> pid: 0, No.1 iter, val mrr=0.0019646584246065138
+2023-04-28 18:47:59,025 INFO     ==> pid: 0, No.1 iter, test mrr=0.00225909126164421
+2023-04-28 18:49:58,584 INFO     ==> pid: 0, No.1000 iter, val mrr=0.006906472658372839
+2023-04-28 18:50:01,790 INFO     ==> pid: 0, No.1000 iter, test mrr=0.006166021449555531
+2023-04-28 18:52:00,654 INFO     ==> pid: 0, No.2000 iter, val mrr=0.03598093438245661
+2023-04-28 18:52:03,492 INFO     ==> pid: 0, No.2000 iter, test mrr=0.03515188545671887
+2023-04-28 18:54:02,184 INFO     ==> pid: 0, No.3000 iter, val mrr=0.13720934960194228
+2023-04-28 18:54:04,858 INFO     ==> pid: 0, No.3000 iter, test mrr=0.13553042419416966
+2023-04-28 18:56:03,055 INFO     ==> pid: 0, No.4000 iter, val mrr=0.21341055819212917
+2023-04-28 18:56:06,265 INFO     ==> pid: 0, No.4000 iter, test mrr=0.20954531842222376
+2023-04-28 18:58:04,773 INFO     ==> pid: 0, No.5000 iter, val mrr=0.26570793479397053
+2023-04-28 18:58:07,414 INFO     ==> pid: 0, No.5000 iter, test mrr=0.25926380267882493
+2023-04-28 19:00:04,898 INFO     ==> pid: 0, No.6000 iter, val mrr=0.30375034854283267
+2023-04-28 19:00:07,653 INFO     ==> pid: 0, No.6000 iter, test mrr=0.2950655882793106
+2023-04-28 19:02:06,286 INFO     ==> pid: 0, No.7000 iter, val mrr=0.3303873550435425
+2023-04-28 19:02:09,123 INFO     ==> pid: 0, No.7000 iter, test mrr=0.3206853397684165
+2023-04-28 19:04:06,818 INFO     ==> pid: 0, No.8000 iter, val mrr=0.3474674494533319
+2023-04-28 19:04:09,722 INFO     ==> pid: 0, No.8000 iter, test mrr=0.3363148550768108
+2023-04-28 19:06:07,389 INFO     ==> pid: 0, No.9000 iter, val mrr=0.3572258607898055
+2023-04-28 19:06:10,178 INFO     ==> pid: 0, No.9000 iter, test mrr=0.34575490859222247
+2023-04-28 19:08:08,470 INFO     ==> pid: 0, No.10000 iter, val mrr=0.3604994039666804
+2023-04-28 19:08:11,113 INFO     ==> pid: 0, No.10000 iter, test mrr=0.34900157138003884
+2023-04-28 19:10:09,148 INFO     ==> pid: 0, No.11000 iter, val mrr=0.3589203249201955
+2023-04-28 19:12:07,262 INFO     ==> pid: 0, No.12000 iter, val mrr=0.35481980212933456
+2023-04-28 19:14:06,229 INFO     ==> pid: 0, No.13000 iter, val mrr=0.3521820938237068
+2023-04-28 19:16:04,278 INFO     ==> pid: 0, No.14000 iter, val mrr=0.37530103762094663
+2023-04-28 19:16:07,178 INFO     ==> pid: 0, No.14000 iter, test mrr=0.3601754709388087
+2023-04-28 19:18:05,353 INFO     ==> pid: 0, No.15000 iter, val mrr=0.37310755102198934
+2023-04-28 19:20:03,208 INFO     ==> pid: 0, No.16000 iter, val mrr=0.37210201352235656
+2023-04-28 19:22:01,325 INFO     ==> pid: 0, No.17000 iter, val mrr=0.3712653928990302
+2023-04-28 19:23:58,608 INFO     ==> pid: 0, No.18000 iter, val mrr=0.38465429888324865
+2023-04-28 19:24:01,417 INFO     ==> pid: 0, No.18000 iter, test mrr=0.37172692783523703
+2023-04-28 19:25:58,937 INFO     ==> pid: 0, No.19000 iter, val mrr=0.38663451866986537
+2023-04-28 19:26:01,536 INFO     ==> pid: 0, No.19000 iter, test mrr=0.3727036258906743
+2023-04-28 19:27:59,197 INFO     ==> pid: 0, No.20000 iter, val mrr=0.38580296665006397
+2023-04-28 19:29:56,857 INFO     ==> pid: 0, No.21000 iter, val mrr=0.38562277682080426
+2023-04-28 19:31:54,045 INFO     ==> pid: 0, No.22000 iter, val mrr=0.38560817904207645
+2023-04-28 19:33:51,404 INFO     ==> pid: 0, No.23000 iter, val mrr=0.39279058167045916
+2023-04-28 19:33:54,131 INFO     ==> pid: 0, No.23000 iter, test mrr=0.3784672721833172
+2023-04-28 19:35:51,659 INFO     ==> pid: 0, No.24000 iter, val mrr=0.39240227548854967
+2023-04-28 19:37:48,966 INFO     ==> pid: 0, No.25000 iter, val mrr=0.39202534297050856
+2023-04-28 19:39:46,921 INFO     ==> pid: 0, No.26000 iter, val mrr=0.39219522933919926
+2023-04-28 19:41:44,211 INFO     ==> pid: 0, No.27000 iter, val mrr=0.39419587998509104
+2023-04-28 19:41:46,907 INFO     ==> pid: 0, No.27000 iter, test mrr=0.37977600187781607
+2023-04-28 19:43:44,680 INFO     ==> pid: 0, No.28000 iter, val mrr=0.39431619667347695
+2023-04-28 19:43:47,548 INFO     ==> pid: 0, No.28000 iter, test mrr=0.38008757508560137
+2023-04-28 19:45:45,596 INFO     ==> pid: 0, No.29000 iter, val mrr=0.39434187582203045
+2023-04-28 19:45:48,171 INFO     ==> pid: 0, No.29000 iter, test mrr=0.3796225836491744
+2023-04-28 19:47:46,070 INFO     ==> pid: 0, No.30000 iter, val mrr=0.39454076085305323
+2023-04-28 19:47:48,606 INFO     ==> pid: 0, No.30000 iter, test mrr=0.3797131170375812
+2023-04-28 19:49:46,231 INFO     ==> pid: 0, No.31000 iter, val mrr=0.3942629597071707
+2023-04-28 19:51:43,687 INFO     ==> pid: 0, No.32000 iter, val mrr=0.39449250680835646
+2023-04-28 19:53:41,087 INFO     ==> pid: 0, No.33000 iter, val mrr=0.39469810199163124
+2023-04-28 19:53:43,754 INFO     ==> pid: 0, No.33000 iter, test mrr=0.37995782189097
+2023-04-28 19:55:41,100 INFO     ==> pid: 0, No.34000 iter, val mrr=0.39423502425243984
+2023-04-28 19:57:38,544 INFO     ==> pid: 0, No.35000 iter, val mrr=0.3946565129004745
+2023-04-28 19:59:36,264 INFO     ==> pid: 0, No.36000 iter, val mrr=0.39482248413814075
+2023-04-28 19:59:39,053 INFO     ==> pid: 0, No.36000 iter, test mrr=0.37927938919265447
+2023-04-28 20:01:37,231 INFO     ==> pid: 0, No.37000 iter, val mrr=0.3941831383121734
+2023-04-28 20:03:34,183 INFO     ==> pid: 0, No.38000 iter, val mrr=0.3941862003088841
+2023-04-28 20:05:31,783 INFO     ==> pid: 0, No.39000 iter, val mrr=0.39457289743738944
+2023-04-28 20:07:29,340 INFO     ==> pid: 0, No.40000 iter, val mrr=0.39578093816123583
+2023-04-28 20:07:32,167 INFO     ==> pid: 0, No.40000 iter, test mrr=0.37993522907645333
+2023-04-28 20:09:30,201 INFO     ==> pid: 0, No.41000 iter, val mrr=0.39542245386499236
+2023-04-28 20:11:27,678 INFO     ==> pid: 0, No.42000 iter, val mrr=0.39574681321429384
+2023-04-28 20:13:25,521 INFO     ==> pid: 0, No.43000 iter, val mrr=0.395424206573253
+2023-04-28 20:15:23,187 INFO     ==> pid: 0, No.44000 iter, val mrr=0.39542992470122945
+2023-04-28 20:17:20,547 INFO     ==> pid: 0, No.45000 iter, val mrr=0.3960551977157618
+2023-04-28 20:17:23,250 INFO     ==> pid: 0, No.45000 iter, test mrr=0.38068126295265375
+2023-04-28 20:19:20,927 INFO     ==> pid: 0, No.46000 iter, val mrr=0.3960326950091645
+2023-04-28 20:21:17,558 INFO     ==> pid: 0, No.47000 iter, val mrr=0.3958585190730017
+2023-04-28 20:23:14,007 INFO     ==> pid: 0, No.48000 iter, val mrr=0.3955214260483895
+2023-04-28 20:25:11,134 INFO     ==> pid: 0, No.49000 iter, val mrr=0.3958050422558676
+2023-04-28 20:27:07,506 INFO     ==> pid: 0, No.50000 iter, val mrr=0.39599608850382356
+2023-04-28 20:27:07,507 INFO     ==> pid: 0, early stopping at No.50000 step
+2023-04-28 20:27:07,877 INFO     trials:19/200
+2023-04-28 20:27:13,358 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 500, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'normal', 'lr': 0.0033769746459489853, 'regu_weight': 5.303204811047789e-08, 'advs': 0, 'dropoutRate': 0.013745193642083585, 'gamma': 11.066131380266274, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:27:13,417 INFO     ==> pid: 0, num_parameters for TTransE: 5996502
+2023-04-28 20:27:14,080 WARNING  out of memory in training step
+2023-04-28 20:27:14,504 INFO     trials:20/200
+2023-04-28 20:27:19,993 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 1000, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.0010490705609139163, 'regu_weight': 1.1482474774429784e-05, 'advs': 0, 'dropoutRate': 0.004845172389331875, 'gamma': 6.78244815393017, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:27:20,123 INFO     ==> pid: 0, num_parameters for TTransE: 15993002
+2023-04-28 20:27:20,521 WARNING  out of memory in training step
+2023-04-28 20:27:20,886 INFO     trials:21/200
+2023-04-28 20:27:26,717 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 500, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.0025383254257062126, 'regu_weight': 8.744172167028278e-05, 'advs': 0, 'dropoutRate': 0.033770932290518495, 'gamma': 23.25106016999217, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:27:26,782 INFO     ==> pid: 0, num_parameters for TTransE: 5996502
+2023-04-28 20:27:27,339 WARNING  out of memory in training step
+2023-04-28 20:27:27,712 INFO     trials:22/200
+2023-04-28 20:27:33,390 INFO     ==> pid: 0, proparams_dict: {'batch_size': 256, 'dim': 500, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'xavier_uniform', 'lr': 0.0003588721859056262, 'regu_weight': 1.040712330088362e-08, 'advs': 0, 'dropoutRate': 0.015345522862650118, 'gamma': 11.721809384818869, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:27:33,446 INFO     ==> pid: 0, num_parameters for TTransE: 5996502
+2023-04-28 20:27:37,325 INFO     ==> pid: 0, No.1 iter, val mrr=0.0012652254329489543
+2023-04-28 20:27:40,560 INFO     ==> pid: 0, No.1 iter, test mrr=0.0012370268215997728
+2023-04-28 20:28:58,623 INFO     ==> pid: 0, No.1000 iter, val mrr=0.2827248050470689
+2023-04-28 20:29:01,945 INFO     ==> pid: 0, No.1000 iter, test mrr=0.2760490059889485
+2023-04-28 20:30:19,716 INFO     ==> pid: 0, No.2000 iter, val mrr=0.3272362809055248
+2023-04-28 20:30:22,989 INFO     ==> pid: 0, No.2000 iter, test mrr=0.31799215920062107
+2023-04-28 20:31:41,102 INFO     ==> pid: 0, No.3000 iter, val mrr=0.34809222705570325
+2023-04-28 20:31:44,372 INFO     ==> pid: 0, No.3000 iter, test mrr=0.3373649300963083
+2023-04-28 20:33:02,516 INFO     ==> pid: 0, No.4000 iter, val mrr=0.3582762405684464
+2023-04-28 20:33:05,705 INFO     ==> pid: 0, No.4000 iter, test mrr=0.34590843883301986
+2023-04-28 20:34:23,552 INFO     ==> pid: 0, No.5000 iter, val mrr=0.3645583951191209
+2023-04-28 20:34:26,926 INFO     ==> pid: 0, No.5000 iter, test mrr=0.3512656019403777
+2023-04-28 20:35:46,120 INFO     ==> pid: 0, No.6000 iter, val mrr=0.36668734461730906
+2023-04-28 20:35:49,323 INFO     ==> pid: 0, No.6000 iter, test mrr=0.35315727420155535
+2023-04-28 20:37:08,157 INFO     ==> pid: 0, No.7000 iter, val mrr=0.36929458848379526
+2023-04-28 20:37:11,421 INFO     ==> pid: 0, No.7000 iter, test mrr=0.3562814403444268
+2023-04-28 20:38:29,539 INFO     ==> pid: 0, No.8000 iter, val mrr=0.3696666770623703
+2023-04-28 20:38:32,905 INFO     ==> pid: 0, No.8000 iter, test mrr=0.35704917430699945
+2023-04-28 20:39:50,911 INFO     ==> pid: 0, No.9000 iter, val mrr=0.36999128188971825
+2023-04-28 20:39:54,136 INFO     ==> pid: 0, No.9000 iter, test mrr=0.35815812297768135
+2023-04-28 20:41:12,900 INFO     ==> pid: 0, No.10000 iter, val mrr=0.37143627354914
+2023-04-28 20:41:16,150 INFO     ==> pid: 0, No.10000 iter, test mrr=0.3578214960789345
+2023-04-28 20:43:23,196 INFO     preparing training data ...
+2023-04-28 20:43:52,063 INFO     finish preparing
+2023-04-28 20:43:52,064 INFO     Evaluation params for TTransE: {'batch_size': 1024, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.003930490039134467, 'regu_weight': 0.001677697278368161, 'advs': 0, 'dropoutRate': 0.04599246027135747, 'gamma': 23.24125309599283, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01}
+2023-04-28 20:43:52,064 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 200, 'n_neg': 0, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'uniform', 'lr': 0.003930490039134467, 'regu_weight': 0.001677697278368161, 'advs': 0, 'dropoutRate': 0.04599246027135747, 'gamma': 23.24125309599283, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': '1VsAll', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:44:04,436 INFO     preparing training data ...
+2023-04-28 20:44:33,936 INFO     finish preparing
+2023-04-28 20:44:33,937 INFO     trials:1/200
+2023-04-28 20:44:35,677 INFO     ==> pid: 0, proparams_dict: {'batch_size': 512, 'dim': 200, 'n_neg': 2048, 'regularizer': 'NUC', 'loss_function': 'BCE_sum', 'initializer': 'xavier_normal', 'lr': 0.0015300146879132887, 'regu_weight': 2.1444237080591982e-07, 'advs': 0, 'dropoutRate': 0.02509304908654315, 'gamma': 12.20657626843258, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:45:30,505 INFO     preparing training data ...
+2023-04-28 20:45:56,355 INFO     finish preparing
+2023-04-28 20:45:56,355 INFO     trials:1/200
+2023-04-28 20:45:58,522 INFO     ==> pid: 0, proparams_dict: {'batch_size': 1024, 'dim': 200, 'n_neg': 512, 'regularizer': 'NUC', 'loss_function': 'CE', 'initializer': 'xavier_normal', 'lr': 0.001129813864828888, 'regu_weight': 2.8575207978650005e-07, 'advs': 0, 'dropoutRate': 0.07467276174820693, 'gamma': 7.978221227730452, 'optimizer': 'adam', 'shareInverseRelation': True, 'training_mode': 'negativeSampling', 'label_smooth': 0.0, 'filter_falseNegative': True, 'embedding_range': 0.01} 
+
+2023-04-28 20:45:58,539 INFO     ==> pid: 0, num_parameters for TTransE: 1544602
+2023-04-28 20:46:05,279 INFO     ==> pid: 0, No.1 iter, val mrr=0.0015564115624537684
+2023-04-28 20:46:09,645 INFO     ==> pid: 0, No.1 iter, test mrr=0.0014601821061933685
+2023-04-28 20:47:26,207 INFO     ==> pid: 0, No.1000 iter, val mrr=0.31713046444579385
+2023-04-28 20:47:29,776 INFO     ==> pid: 0, No.1000 iter, test mrr=0.3099277494059253
